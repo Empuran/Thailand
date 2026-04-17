@@ -1,253 +1,302 @@
-const data = {
-    vibe: {
-        title: "Thailand Quest",
-        subtitle: "MAY 1 - MAY 6, 2026",
-        bg: "hero.png"
+const itinerary = {
+    "day-1": {
+        title: "Day 1: Pattaya Arrival",
+        items: [
+            {
+                name: "Direct Bus to Pattaya",
+                time: "10:30 AM",
+                dur: "3 hrs",
+                famous: "Cheapest Transit",
+                desc: "Air-conditioned bus from DMK Airport or Ekkamai Terminal.",
+                img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800",
+                transport: { cheap: "Public Bus (150 THB)", best: "Private Taxi (1200 THB share)" },
+                cost: "150",
+                map: "Pattaya+Bus+Terminal"
+            },
+            {
+                name: "Sanctuary of Truth",
+                time: "03:00 PM",
+                dur: "2.5 hrs",
+                famous: "Wooden Masterpiece",
+                desc: "Stunning hand-carved museum with Hindu and Buddhist motifs.",
+                img: "https://images.unsplash.com/photo-1528181304800-2f140819898f?q=80&w=800",
+                transport: { cheap: "Baht Bus (20 THB)", best: "Bolt/Grab (120 THB)" },
+                cost: "500",
+                map: "Sanctuary+of+Truth+Pattaya"
+            },
+            {
+                name: "Walking Street Nightlife",
+                time: "10:00 PM",
+                dur: "Until 2 AM",
+                famous: "Pattaya Icon",
+                desc: "Explore the neon-lit heart of Pattaya's vibrant nightlife.",
+                img: "https://images.unsplash.com/photo-1629115948551-aa947381d6d3?q=80&w=800",
+                transport: { cheap: "Baht Bus (10 THB)", best: "Bolt/Grab (90 THB)" },
+                cost: "500 (Drinks)",
+                map: "Pattaya+Walking+Street"
+            }
+        ]
     },
-    rules: [
-        { type: "legal", title: "Legal 2026", icon: "shield-alert", items: ["🚫 Vaping: Illegal. Arrest risk.", "🌿 Cannabis: Medical only. Prescriptions on-site.", "👑 Monarchy: No insults/jokes. Stiff penalties."] },
-        { type: "culture", title: "Culture", icon: "landmark", items: ["👗 Temples: Cover shoulders & knees.", "👟 Shoes: Off at the door.", "🧘 Buddha: Feet away from statues."] },
-        { type: "pro", title: "Safety", icon: "alert-triangle", items: ["🛵 Traffic: Use Grab/Bolt, not scooters.", "💧 Water: Bottled only.", "🇹🇭 Anthem: Stop and stand still."] }
-    ],
-    days: {
-        1: {
-            title: "Day 1: Arrival & Pattaya Intro",
-            categories: {
-                "Activities & Sights": [
-                    { name: "Sanctuary of Truth", famous: "Architectural Wonder", desc: "A massive hand-carved wooden temple exploring religious philosophy.", img: "https://images.unsplash.com/photo-1528181304800-2f140819898f?q=80&w=800", map: "Sanctuary+of+Truth+Pattaya" },
-                    { name: "Pattaya Viewpoint", famous: "Panoramic Views", desc: "The best spot for photos of the entire bay curve.", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800", map: "Pattaya+Viewpoint" }
-                ],
-                "Nightlife": [
-                    { name: "Pattaya Walking Street", famous: "Neon Heart of Thailand", desc: "Endless clubs, live music, and street performances.", img: "https://images.unsplash.com/photo-1629115948551-aa947381d6d3?q=80&w=800", map: "Pattaya+Walking+Street" }
-                ],
-                "Must Eat": [
-                    { name: "The Sky Gallery", famous: "Sunset Dining", desc: "Premium beach restaurant with a focus on fresh seafood.", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800", map: "The+Sky+Gallery+Pattaya" }
-                ],
-                "Weeds": [
-                    { name: "Cloud Nine Pattaya", famous: "Retro-Futurist Dispensary", desc: "GACP-certified flower and a professional medical-style vibe.", img: "https://images.unsplash.com/photo-1589139044941-84196d07d6d5?q=80&w=800", map: "Cloud+Nine+Cannabis+Pattaya" }
-                ]
+    "day-2": {
+        title: "Day 2: Islands & Temples",
+        items: [
+            {
+                name: "Koh Larn (Coral Island)",
+                time: "08:30 AM",
+                dur: "5 hrs",
+                famous: "Snorkeling & Sand",
+                desc: "Speedboat trip for crystal clear water and island vibes.",
+                img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800",
+                transport: { cheap: "Ferry (30 THB)", best: "Speedboat (300 THB)" },
+                cost: "300",
+                map: "Koh+Larn+Pattaya"
+            },
+            {
+                name: "Art in Paradise",
+                time: "02:30 PM",
+                dur: "1.5 hrs",
+                famous: "3D Interactive Art",
+                desc: "Unique museum where you become part of the optical illusions.",
+                img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800",
+                transport: { cheap: "Baht Bus (10 THB)", best: "Bolt (80 THB)" },
+                cost: "500",
+                map: "Art+in+Paradise+Pattaya"
+            },
+            {
+                name: "Big Buddha + Wang Sam Sien",
+                time: "05:00 PM",
+                dur: "2 hrs",
+                famous: "Panoramic Views & Peace",
+                desc: "Massive golden Buddha and the serene hidden Chinese temple.",
+                img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800",
+                transport: { cheap: "Baht Bus (20 THB)", best: "Bolt (110 THB)" },
+                cost: "Free",
+                map: "Wat+Phra+Yai+Big+Buddha+Pattaya"
+            },
+            {
+                name: "Alcazar Cabaret Show",
+                time: "09:00 PM",
+                dur: "1.5 hrs",
+                famous: "Grand Cabaret",
+                desc: "High-energy dance and music with world-class costumes.",
+                img: "https://images.unsplash.com/photo-1514525253361-b8748b43a59a?q=80&w=800",
+                transport: { cheap: "Baht Bus (10 THB)", best: "Bolt (70 THB)" },
+                cost: "600",
+                map: "Alcazar+Cabaret+Show+Pattaya"
             }
-        },
-        2: {
-            title: "Day 2: Islands & Animal Magic",
-            categories: {
-                "Activities & Sights": [
-                    { name: "Koh Larn (Coral Island)", famous: "Turquoise Escape", desc: "Clear waters and white sand beaches just 15min away.", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800", map: "Koh+Larn+Pattaya" },
-                    { name: "Art in Paradise", famous: "3D Illusion Art", desc: "Interactive gallery where you become part of the painting.", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800", map: "Art+in+Paradise+Pattaya" }
-                ],
-                "Nightlife": [
-                    { name: "Alcazar Cabaret Show", famous: "Legendary Performance", desc: "One of the most spectacular theater shows in Thailand.", img: "https://images.unsplash.com/photo-1514525253361-b8748b43a59a?q=80&w=800", map: "Alcazar+Cabaret+Show+Pattaya" }
-                ],
-                "Must Eat": [
-                    { name: "PTY Floating Market", famous: "River Dining", desc: "Traditional Thai snacks served from canal boats.", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800", map: "Pattaya+Floating+Market" }
-                ],
-                "Weeds": [
-                    { name: "Siam Green Pattaya", famous: "Professional Craft", desc: "Wellness-focused dispensary with expert guidance.", img: "https://images.unsplash.com/photo-1563201392-3abc3a3a0aa0?q=80&w=800", map: "Siam+Green+Cannabis+Pattaya" }
-                ]
+        ]
+    },
+    "day-3": {
+        title: "Day 3: Bangkok Central",
+        items: [
+            {
+                name: "Chatuchak Market (Sunday)",
+                time: "09:00 AM",
+                dur: "3 hrs",
+                famous: "Weekend Shopping",
+                desc: "Confirmed open (Sunday May 3). Bangkok's biggest market.",
+                img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800",
+                transport: { cheap: "BTS/MRT (40 THB)", best: "Grab (200 THB)" },
+                cost: "500 (Budget)",
+                map: "Chatuchak+Weekend+Market"
+            },
+            {
+                name: "The Grand Palace",
+                time: "01:00 PM",
+                dur: "2.5 hrs",
+                famous: "Royal Beauty",
+                desc: "The spiritual heart of the city and former home of Kings.",
+                img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800",
+                transport: { cheap: "MRT to Sanam Chai (40 THB)", best: "Grab (150 THB)" },
+                cost: "500",
+                map: "Grand+Palace+Bangkok"
+            },
+            {
+                name: "Wat Arun (Sunset View)",
+                time: "05:30 PM",
+                dur: "1.5 hrs",
+                famous: "Temple of Dawn",
+                desc: "Iconic riverside temple. Best viewed from across the river at sunset.",
+                img: "https://images.unsplash.com/photo-1582298538104-fe2e04f63873?q=80&w=800",
+                transport: { cheap: "River Boat (5 THB)", best: "Grab (100 THB)" },
+                cost: "100",
+                map: "Wat+Arun+Bangkok"
+            },
+            {
+                name: "Chinatown (Yaowarat)",
+                time: "08:30 PM",
+                dur: "3 hrs",
+                famous: "Street Food Heaven",
+                desc: "Neon signs and the world's best seafood street food.",
+                img: "https://images.unsplash.com/photo-1555529323-288219463b2f?q=80&w=800",
+                transport: { cheap: "MRT Wat Mangkon (30 THB)", best: "Grab (120 THB)" },
+                cost: "400",
+                map: "Yaowarat+Road+Chinatown"
             }
-        },
-        3: {
-            title: "Day 3: To Bangkok Modern Hub",
-            categories: {
-                "Activities & Sights": [
-                    { name: "ICONSIAM", famous: "Riverside Mega-Mall", desc: "A blend of luxury shopping and authentic Thai culture.", img: "https://images.unsplash.com/photo-1562602833-286811776db1?q=80&w=800", map: "ICONSIAM+Bangkok" },
-                    { name: "Asiatique Ferris Wheel", famous: "Riverside Entertainment", desc: "Open-air mall with the famous riverfront big wheel.", img: "https://images.unsplash.com/photo-1618335829737-2228915674e0?q=80&w=800", map: "Asiatique+The+Riverfront+Bangkok" }
-                ],
-                "Nightlife": [
-                    { name: "Sukhumvit Soi 11", famous: "The Party Mile", desc: "Bangkok's trendiest collection of bars and lounges.", img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800", map: "Sukhumvit+Soi+11+Bangkok" }
-                ],
-                "Must Eat": [
-                    { name: "SookSiam (ICONSIAM)", famous: "Indoor Street Food", desc: "Authentic food from all 77 provinces of Thailand.", img: "https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?q=80&w=800", map: "ICONSIAM+SookSiam" }
-                ],
-                "Massage": [
-                    { name: "Health Land Asoke", famous: "Traditional Excellence", desc: "Professional, grand-scale traditional Thai massage.", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800", map: "Health+Land+Asoke+Bangkok" }
-                ]
+        ]
+    },
+    "day-4": {
+        title: "Day 4: Parks & Night Markets",
+        items: [
+            {
+                name: "Lumpini Park",
+                time: "10:00 AM",
+                dur: "2 hrs",
+                famous: "Green Escape",
+                desc: "Watch water monitor lizards and enjoy the peaceful lake.",
+                img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800",
+                transport: { cheap: "MRT Lumphini (25 THB)", best: "Grab (110 THB)" },
+                cost: "Free",
+                map: "Lumpini+Park+Bangkok"
+            },
+            {
+                name: "Wat Pho (Reclining Buddha)",
+                time: "01:00 PM",
+                dur: "1.5 hrs",
+                famous: "Massage Birthplace",
+                desc: "Massive 46m golden Buddha and famous Thai massage center.",
+                img: "https://images.unsplash.com/photo-1528642168434-c483a652a8a1?q=80&w=800",
+                transport: { cheap: "MRT Sanam Chai (35 THB)", best: "Grab (140 THB)" },
+                cost: "200",
+                map: "Wat+Pho+Bangkok"
+            },
+            {
+                name: "Khao San Road",
+                time: "07:00 PM",
+                dur: "3 hrs",
+                famous: "Backpacker Hub",
+                desc: "A chaotic mix of street bars, cheap eats, and loud music.",
+                img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800",
+                transport: { cheap: "Grab Share (80 THB)", best: "Grab (150 THB)" },
+                cost: "300",
+                map: "Khao+San+Road+Bangkok"
+            },
+            {
+                name: "Asiatique The Riverfront",
+                time: "10:30 PM",
+                dur: "2 hrs",
+                famous: "Riverside Market",
+                desc: "Open-air mall with a Ferris wheel and beautiful river views.",
+                img: "https://images.unsplash.com/photo-1618335829737-2228915674e0?q=80&w=800",
+                transport: { cheap: "Free Shuttle Boat (0 THB)", best: "Grab (200 THB)" },
+                cost: "400",
+                map: "Asiatique+Riverfront+Bangkok"
             }
-        },
-        4: {
-            title: "Day 4: Bangkok Heritage Icons",
-            categories: {
-                "Activities & Sights": [
-                    { name: "Grand Palace", famous: "The Kingdom's Jewel", desc: "Iconic residence of kings and home to the Emerald Buddha.", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800", map: "Grand+Palace+Bangkok" },
-                    { name: "Wat Arun", famous: "Temple of Dawn", desc: "Shimmering ceramic tower on the bank of the river.", img: "https://images.unsplash.com/photo-1582298538104-fe2e04f63873?q=80&w=800", map: "Wat+Arun+Bangkok" }
-                ],
-                "Nightlife": [
-                    { name: "Tichuca Rooftop Bar", famous: "Avatar Tree Lounge", desc: "Stunning 360 views with a color-changing light tree.", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800", map: "Tichuca+Rooftop+Bar+Bangkok" }
-                ],
-                "Must Eat": [
-                    { name: "Jay Fai (Michelin)", famous: "World-Class Crab Omelette", desc: "The legendary street food queen. (Advance booking needed!).", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800", map: "Raan+Jay+Fai+Bangkok" },
-                    { name: "Yaowarat Street Food", famous: "Chinatown Feast", desc: "Neon signs and endless local delicacies at night.", img: "https://images.unsplash.com/photo-1555529323-288219463b2f?q=80&w=800", map: "Yaowarat+Road+Bangkok" }
-                ],
-                "Massage": [
-                    { name: "Oasis Spa", famous: "Luxury Day Spa", desc: "Premium garden setting for ultimate relaxation.", img: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800", map: "Oasis+Spa+Sukhumvit+Bangkok" }
-                ]
+        ]
+    },
+    "day-5": {
+        title: "Day 5: Culture & Departure",
+        items: [
+            {
+                name: "Nong Nooch Tropical Garden",
+                time: "09:00 AM",
+                dur: "3.5 hrs",
+                famous: "Botanical Treasure",
+                desc: "One of the most beautiful gardens in SE Asia (moved to Day 5/Alternative).",
+                img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800",
+                transport: { cheap: "Grab Share (200 THB)", best: "Grab (400 THB)" },
+                cost: "500",
+                map: "Nong+Nooch+Tropical+Garden"
+            },
+            {
+                name: "Health Land (Last Massage)",
+                time: "03:00 PM",
+                dur: "2 hrs",
+                famous: "Relaxation Hub",
+                desc: "Final premium Thai massage before your flight.",
+                img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800",
+                transport: { cheap: "MRT Asoke (20 THB)", best: "Grab (80 THB)" },
+                cost: "600",
+                map: "Health+Land+Asoke+Bangkok"
+            },
+            {
+                name: "Airport Bound (DMK)",
+                time: "08:00 PM",
+                dur: "1 hr",
+                famous: "Homeward",
+                desc: "Take the A1 Bus or Grab to catch your flight.",
+                img: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=800",
+                transport: { cheap: "A1 Bus (30 THB)", best: "Grab (350 THB)" },
+                cost: "30",
+                map: "DMK+Airport+Bangkok"
             }
-        },
-        5: {
-            title: "Day 5: Shopping & Departure",
-            categories: {
-                "Activities & Sights": [
-                    { name: "Siam Paragon", famous: "Luxury Hub", desc: "Flagship mall with the best food hall in the city.", img: "https://images.unsplash.com/photo-1506450983270-d790323ad8e7?q=80&w=800", map: "Siam+Paragon+Bangkok" },
-                    { name: "Jodd Fairs Market", desc: "Trendy night food market (opens early).", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800", map: "Jodd+Fairs+Bangkok" }
-                ],
-                "Must Eat": [
-                    { name: "Mango Sticky Rice", famous: "Famous Thai Dessert", desc: "Available at Mae Varee near Thong Lo.", img: "https://images.unsplash.com/photo-1598952404618-f03dfa640101?q=80&w=800", map: "Mae+Varee+Mango+Sticky+Rice" }
-                ],
-                "Massage": [
-                    { name: "Let's Relax Spa", famous: "Premium Chain", desc: "High-end comfort with free Sticky Rice treat after.", img: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=800", map: "Lets+Relax+Spa+Bangkok" }
-                ]
-            }
-        }
+        ]
     }
 };
 
-let currentSlide = 0;
-const slider = document.getElementById('slider');
+function startApp() {
+    document.getElementById('vibe-section').style.display = 'none';
+    document.getElementById('app-main').style.display = 'block';
+    renderItinerary();
+}
 
-function renderSlides() {
-    slider.innerHTML = '';
-    
-    // 1. Vibe Slide
-    const vibeSlide = document.createElement('div');
-    vibeSlide.className = 'slide vibe-page';
-    vibeSlide.innerHTML = `
-        <div class="vibe-hero">
-            <p>${data.vibe.subtitle}</p>
-            <h1>${data.vibe.title}</h1>
-            <div id="slide-countdown" style="margin-top: 20px; font-weight: 800; color: var(--secondary);"></div>
-        </div>
-    `;
-    slider.appendChild(vibeSlide);
+function renderItinerary() {
+    const container = document.getElementById('itinerary-days');
+    container.innerHTML = '';
 
-    // 2. Rules Slide
-    const rulesSlide = document.createElement('div');
-    rulesSlide.className = 'slide';
-    rulesSlide.innerHTML = `
-        <h2 style="font-size: 3rem; text-align: center; margin-bottom: 40px;">THE RULES</h2>
-        <div class="rules-grid">
-            ${data.rules.map(r => `
-                <div class="rule-card ${r.type}">
-                    <h3><i data-lucide="${r.icon}"></i> ${r.title}</h3>
-                    <ul>${r.items.map(i => `<li>${i}</li>`).join('')}</ul>
-                </div>
-            `).join('')}
-        </div>
-    `;
-    slider.appendChild(rulesSlide);
-
-    // 3. Day Slides
-    Object.keys(data.days).forEach(dIdx => {
-        const day = data.days[dIdx];
-        const daySlide = document.createElement('div');
-        daySlide.className = 'slide';
-        daySlide.id = `day-slide-${dIdx}`;
+    Object.keys(itinerary).forEach((key) => {
+        const day = itinerary[key];
+        const dayEl = document.createElement('div');
+        dayEl.id = key;
+        dayEl.className = 'day-section';
         
-        const catKeys = Object.keys(day.categories);
-        daySlide.innerHTML = `
-            <h2 style="font-size: 2.5rem; text-align: center;">${day.title}</h2>
-            <div class="tab-container">
-                ${catKeys.map((c, i) => `
-                    <button class="tab-btn ${i === 0 ? 'active' : ''}" onclick="switchTab(${dIdx}, '${c}', this)">
-                        ${c}
-                    </button>
-                `).join('')}
-            </div>
-            <div class="content-area" id="content-${dIdx}">
-                <!-- Category content rendered here -->
-            </div>
-        `;
-        slider.appendChild(daySlide);
-        renderCategory(dIdx, catKeys[0]); // Render first category by default
+        let html = `<h2 style="margin-bottom: 25px; font-weight: 900;">${day.title}</h2>`;
+        
+        day.items.forEach(item => {
+            html += `
+                <div class="activity-card">
+                    <div class="card-img" style="background-image: url('${item.img}')">
+                        <span class="card-badge">${item.time}</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-famous">FAMOUS FOR: ${item.famous}</p>
+                        <h4 class="card-title">${item.name}</h4>
+                        <p class="card-desc">${item.desc}</p>
+                        
+                        <div class="detail-grid">
+                            <div class="detail-item"><strong>DURATION</strong><p>${item.dur}</p></div>
+                            <div class="detail-item"><strong>EST. COST</strong><p>${item.cost} THB</p></div>
+                        </div>
+
+                        <div class="transport-box">
+                            <h5><i data-lucide="bus"></i> TRANSPORT GUIDE (PER PERSON)</h5>
+                            <div class="transport-grid">
+                                <div class="mode-item"><strong>CHEAPEST:</strong><br>${item.transport.cheap}</div>
+                                <div class="mode-item"><strong>BEST/FASTEST:</strong><br>${item.transport.best}</div>
+                            </div>
+                        </div>
+
+                        <a href="https://www.google.com/maps/search/?api=1&query=${item.map.replace(/ /g, '+')}" target="_blank" class="btn-map">
+                            <i data-lucide="map-pin"></i> VIEW ON MAP
+                        </a>
+                    </div>
+                </div>
+            `;
+        });
+        
+        dayEl.innerHTML = html;
+        container.appendChild(dayEl);
     });
 
-    updateSlides();
-    renderDots();
     lucide.createIcons();
 }
 
-function renderCategory(dayIdx, category) {
-    const container = document.getElementById(`content-${dayIdx}`);
-    const items = data.days[dayIdx].categories[category];
-    
-    container.innerHTML = `
-        <div class="content-grid">
-            ${items.map(item => `
-                <div class="card animate">
-                    <div class="card-img" style="background-image: url('${item.img}')"></div>
-                    <div class="card-body">
-                        ${item.famous ? `<span class="famous-tag">FAMOUS FOR: ${item.famous}</span>` : ''}
-                        <h4>${item.name}</h4>
-                        <p>${item.desc}</p>
-                        <div class="card-footer">
-                            <a href="https://www.google.com/maps/search/?api=1&query=${item.map.replace(/ /g, '+')}" target="_blank" class="btn-map">🗺️ GOOGLE MAPS</a>
-                        </div>
-                    </div>
-                </div>
-            `).join('')}
-        </div>
-    `;
-}
-
-function switchTab(dayIdx, category, btn) {
-    const parent = btn.parentElement;
-    parent.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+function showSection(id, btn) {
+    document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
     btn.classList.add('active');
-    renderCategory(dayIdx, category);
-}
 
-function updateSlides() {
-    const slides = document.querySelectorAll('.slide');
-    slides.forEach((s, i) => {
-        s.classList.remove('active', 'next', 'prev');
-        if (i === currentSlide) s.classList.add('active');
-        else if (i > currentSlide) s.classList.add('next');
-        else s.classList.add('prev');
-    });
-
-    document.getElementById('prevBtn').classList.toggle('disabled', currentSlide === 0);
-    document.getElementById('nextBtn').classList.toggle('disabled', currentSlide === slides.length - 1);
+    document.querySelectorAll('.rules-container, .day-section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
     
-    updateDots();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function renderDots() {
-    const container = document.getElementById('dotGroup');
-    const slides = document.querySelectorAll('.slide');
-    container.innerHTML = '';
-    slides.forEach((_, i) => {
-        const d = document.createElement('div');
-        d.className = `dot ${i === currentSlide ? 'active' : ''}`;
-        d.onclick = () => { currentSlide = i; updateSlides(); };
-        container.appendChild(d);
-    });
-}
-
-function updateDots() {
-    document.querySelectorAll('.dot').forEach((d, i) => {
-        d.classList.toggle('active', i === currentSlide);
-    });
-}
-
-function nextSlide() { if (currentSlide < document.querySelectorAll('.slide').length - 1) { currentSlide++; updateSlides(); } }
-function prevSlide() { if (currentSlide > 0) { currentSlide--; updateSlides(); } }
-
-// Keyboard Support
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') nextSlide();
-    if (e.key === 'ArrowLeft') prevSlide();
-});
-
-// Countdown
 function updateCountdown() {
     const trip = new Date("May 1, 2026 08:30:00").getTime();
     const now = new Date().getTime();
     const d = Math.floor((trip - now) / (1000 * 60 * 60 * 24));
-    const el = document.getElementById("slide-countdown");
-    if (el) el.innerHTML = `${d} DAYS UNTIL TAKE OFF`;
+    document.getElementById("countdown").innerHTML = `${d} DAYS UNTIL THAILAND`;
 }
 
-// Init
-renderSlides();
-setInterval(updateCountdown, 1000);
 updateCountdown();
-setTimeout(() => document.getElementById('nav-hint').style.opacity = '0', 5000);
+setInterval(updateCountdown, 86400000);
