@@ -102,7 +102,40 @@ body { background: var(--bg); color: var(--text); overflow: hidden; }
 /* Booking Links */
 .links { display: flex; gap: 10px; }
 .btn-book { flex: 1; text-align: center; padding: 10px; background: #fff; border: 1px solid var(--primary); color: var(--primary); border-radius: 10px; font-size: 0.75rem; font-weight: 800; text-decoration: none; }
-.btn-map { flex: 1; text-align: center; padding: 10px; background: var(--primary); color: #fff; border-radius: 10px; font-size: 0.75rem; font-weight: 800; text-decoration: none; }
+.btn-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+    height: auto; /* Ensure no vertical stretching */
+}
+
+.btn-start {
+    margin-top: 40px;
+    padding: 18px 45px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+    width: auto !important;
+    height: auto !important;
+}
+
+.btn-start:hover { transform: scale(1.05); }
 
 /* Rules Page */
 .sim-card-guide { background: #ecfdf5; padding: 15px; border-radius: 15px; margin-top: 15px; border: 1px dashed var(--emerald); }
