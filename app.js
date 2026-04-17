@@ -31,10 +31,10 @@ const data = {
                     { name: "Pupen Seafood Jomtien", start: "06:30 PM", end: "08:00 PM", hours: "10:00 AM - 10:00 PM", dur: "1.5 hrs", cost: 450, dish: "Poo Pad Pong Karee", see: "Iconic giant crab statue at the beach entry.", do: "Eat fresh curry crab while enjoying the sea breeze.", map: "Pupen+Seafood+Pattaya", img: "./pupen-seafood.jpg" }
                 ],
                 "Nightlife": [
-                    { name: "Walking Street", start: "09:00 PM", end: "02:00 AM", hours: "06:00 PM - 02:00 AM", dur: "Till 2 AM", cost: 800, famous: "Party Haven", see: "Explosive neon lights and high-energy crowds.", do: "Hop between live music bars and sky bars.", map: "Pattaya+Walking+Street", img: "https://images.unsplash.com/photo-1590732152668-f9bcf040375a?q=80&w=800" }
+                    { name: "Walking Street", start: "09:00 PM", end: "02:00 AM", hours: "06:00 PM - 02:00 AM", dur: "Till 2 AM", cost: 800, famous: "Party Haven", see: "Explosive neon lights and high-energy crowds.", do: "Hop between live music bars and sky bars.", map: "Pattaya+Walking+Street", img: "./walking street.jpg" }
                 ],
                 "Weed": [
-                    { name: "Cloud Nine", start: "11:30 PM", end: "12:30 AM", hours: "10:00 AM - 02:00 AM", dur: "1 hr", cost: 400, famous: "Cloud Vibe", desc: "Premium dispensary with futuristic white cloud decor.", do: "Sample high-grade Thai flower in a relaxed shop.", map: "Cloud+Nine+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1628191010210-a597bd1a548c?q=80&w=800" }
+                    { name: "Cloud Nine", start: "11:30 PM", end: "12:30 AM", hours: "10:00 AM - 02:00 AM", dur: "1 hr", cost: 400, famous: "Cloud Vibe", desc: "Premium dispensary with futuristic white cloud decor.", do: "Sample high-grade Thai flower in a relaxed shop.", map: "Cloud+Nine+Cannabis+Pattaya", img: "./cloud nine.jpg" }
                 ]
             }
         },
@@ -58,7 +58,7 @@ const data = {
                     { name: "Alcazar Cabaret", start: "11:00 PM", end: "12:30 AM", hours: "Shows: 06:30, 08:00, 09:30 PM", dur: "1.5 hrs", cost: 600, famous: "World Show", see: "Luxurious costumes and high-production dance.", do: "Witness Thailand's most famous cabaret performance.", book: "Official", map: "Alcazar+Cabaret+Show+Pattaya", img: "./alcazar-cabaret-show-9401.jpg" }
                 ],
                 "Weed": [
-                    { name: "Siam Green Pattaya", start: "01:00 AM", end: "02:00 AM", hours: "10:00 AM - 02:00 AM", dur: "1 hr", cost: 300, famous: "Green Quality", desc: "Top-tier shop with certified organic flower.", do: "Relax and wind down after the show.", map: "Siam+Green+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1589139044941-84196d07d6d5?q=80&w=800" }
+                    { name: "Siam Green Pattaya", start: "01:00 AM", end: "02:00 AM", hours: "10:00 AM - 02:00 AM", dur: "1 hr", cost: 300, famous: "Green Quality", desc: "Top-tier shop with certified organic flower.", do: "Relax and wind down after the show.", map: "Siam+Green+Cannabis+Pattaya", img: "./siam green.webp" }
                 ]
             }
         },
@@ -89,11 +89,11 @@ const data = {
             sections: {
                 "Morning": [
                     { name: "7:30 AM Breakfast", start: "07:30 AM", end: "08:00 AM", hours: "06:00 AM - 11:00 AM (Street Food)", dur: "30 min", cost: 150, famous: "Morning Fuel", see: "The energy of busy Bangkok mornings.", do: "Fuel up with street-side boat noodles or congee.", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
-                    { name: "Wat Saket (Golden Mount)", start: "09:00 AM", end: "10:30 AM", hours: "07:30 AM - 07:00 PM", dur: "1.5 hrs", cost: 100, famous: "Temple on Hill", see: "The golden stupa sits atop the only man-made hill in BKK.", do: "Climb the 300 stairs for a 360-degree view of Old Bangkok.", map: "Golden+Mount", img: "https://images.unsplash.com/photo-1528642168434-c483a652a8a1?q=80&w=800" }
+                    { name: "Wat Saket (Golden Mount)", start: "09:00 AM", end: "10:30 AM", hours: "07:30 AM - 07:00 PM", dur: "1.5 hrs", cost: 100, famous: "Temple on Hill", see: "The golden stupa sits atop the only man-made hill in BKK.", do: "Climb the 300 stairs for a 360-degree view of Old Bangkok.", map: "Golden+Mount", img: "./golden mount.jpg" }
                 ],
                 "Activities": [
                     { name: "Lumpini Park", start: "11:00 AM", end: "12:30 PM", hours: "04:30 AM - 10:00 PM", dur: "1.5 hrs", cost: 0, famous: "Green Lung", see: "The lake and the famous monitor lizards.", do: "Take a swan pedal boat for a spin on the lake.", map: "Lumpini+Park", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800" },
-                    { name: "Jim Thompson House", start: "01:30 PM", end: "03:30 PM", hours: "10:00 AM - 06:00 PM", dur: "2 hrs", cost: 200, famous: "Silk Legend", see: "Traditional Thai wood houses in a jungle garden.", do: "Guided tour through the history of the Thai Silk King.", map: "Jim+Thompson+House", transport: "BTS National Stadium", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" }
+                    { name: "Jim Thompson House", start: "01:30 PM", end: "03:30 PM", hours: "10:00 AM - 06:00 PM", dur: "2 hrs", cost: 200, famous: "Silk Legend", see: "Traditional Thai wood houses in a jungle garden.", do: "Guided tour through the history of the Thai Silk King.", map: "Jim+Thompson+House", transport: "BTS National Stadium", img: "./jim thompson.jpeg" }
                 ],
                 "Massage": [
                     { name: "Health Land", start: "04:30 PM", end: "06:30 PM", hours: "09:00 AM - 11:00 PM", dur: "2 hrs", cost: 650, famous: "Top Rated Spa", see: "Bangkok's most iconic traditional spa mansion.", do: "Indulge in a 2-hr Traditional Thai Therapeutic Massage.", book: "Klook", map: "Health+Land+Asoke", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" }
@@ -105,7 +105,7 @@ const data = {
                     { name: "Asiatique Riverfront", start: "10:30 PM", end: "02:00 AM", hours: "04:00 PM - 12:00 AM", dur: "Till 2 AM", cost: 800, famous: "Riverside Joy", see: "Night river views and the massive Ferris wheel.", do: "Shop, drink, and enjoy the riverside cool breeze.", map: "Asiatique", img: "https://images.unsplash.com/photo-1618335829737-2228915674e0?q=80&w=800" }
                 ],
                 "Weed": [
-                    { name: "Cloud Nine Bangkok", start: "01:00 AM", end: "02:00 AM", hours: "10:00 AM - 02:00 AM", dur: "1 hr", cost: 400, famous: "Futuristic Cloud", desc: "Top-tier shop in the city center.", do: "Experience the premium flower in a cloud-themed shop.", map: "Cloud+Nine+Bangkok", img: "https://images.unsplash.com/photo-1628191010210-a597bd1a548c?q=80&w=800" }
+                    { name: "Cloud Nine Bangkok", start: "01:00 AM", end: "02:00 AM", hours: "10:00 AM - 02:00 AM", dur: "1 hr", cost: 400, famous: "Futuristic Cloud", desc: "Top-tier shop in the city center.", do: "Experience the premium flower in a cloud-themed shop.", map: "Cloud+Nine+Bangkok", img: "./cloud nine.jpg" }
                 ]
             }
         },
