@@ -22,7 +22,7 @@ const data = {
             sections: {
                 "Travel & Morning": [
                     { name: "DMK Arrival & Transfer", start: "08:30 AM", end: "11:30 AM", hours: "24/7 Operations", dur: "3 hrs", cost: 150, famous: "Arrival Leg", see: "Arrival at Don Mueang (DMK) and transfer to Pattaya.", do: "Take the official A1 Bus to Mo Chit, then the direct Pattaya shuttle.", transport: "Official Bus A1 (150 THB)", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800" },
-                    { name: "Tiger Park Pattaya", start: "12:00 PM", end: "01:30 PM", hours: "09:00 AM - 06:00 PM", dur: "1.5 hrs", cost: 600, famous: "Wildlife Interaction", see: "Various tiger sizes from cubs to adults.", do: "Safely interact and take photos with medium tigers.", book: "Klook", map: "Tiger+Park+Pattaya", transport: "Bolt Ride (80 THB)", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" }
+                    { name: "Tiger Park Pattaya", start: "12:00 PM", end: "01:30 PM", hours: "09:00 AM - 06:00 PM", dur: "1.5 hrs", cost: 800, famous: "Wildlife Interaction", see: "Various tiger sizes from cubs to adults.", do: "Safely interact and take photos with medium tigers.", book: "Klook", map: "Tiger+Park+Pattaya", transport: "Bolt Ride (80 THB)", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" }
                 ],
                 "Activities": [
                     { name: "Sanctuary of Truth", start: "02:30 PM", end: "05:00 PM", hours: "08:00 AM - 06:00 PM", dur: "2.5 hrs", cost: 500, famous: "Wooden Masterpiece", see: "A massive hand-carved wooden temple overlooking the sea.", do: "Observe artisans at work and join a mandatory guided tour.", book: "Tripadvisor", map: "Sanctuary+of+Truth+Pattaya", transport: "Songthaew (120 THB)", img: "./sanctuary.jpg" }
@@ -118,8 +118,8 @@ const data = {
                     { name: "Ancient City", start: "09:00 AM", end: "01:00 PM", hours: "09:00 AM - 07:00 PM", dur: "4 hrs", cost: 700, famous: "Mini Thailand", see: "Replicas of Thailand's most famous landmarks.", do: "Rent a golf cart (300 THB) to explore the massive grounds.", book: "Klook", map: "Muang+Boran+Ancient+City", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
                 ],
                 "Activities": [
-                    { name: "Erawan Museum", start: "02:00 PM", end: "04:00 PM", hours: "09:00 AM - 06:00 PM", dur: "2 hrs", cost: 400, famous: "Giant Elephant", see: "The massive 3-headed elephant bronze sculpture.", do: "Enter the elephant's belly for incredible cosmic art.", map: "Erawan+Museum", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" },
-                    { name: "MOCA Bangkok", start: "04:30 PM", end: "06:30 PM", hours: "10:00 AM - 06:00 PM (Closed Mon)", dur: "2 hrs", cost: 250, famous: "Modern Masterpieces", see: "Thailand's best collection of modern art.", do: "Explore five floors of stunning Thai contemporary art.", map: "MOCA+Bangkok", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" }
+                    { name: "Erawan Museum", start: "02:00 PM", end: "04:00 PM", hours: "09:00 AM - 06:00 PM", dur: "2 hrs", cost: 400, famous: "Giant Elephant", see: "The massive 3-headed elephant bronze sculpture.", do: "Enter the elephant's belly for incredible cosmic art.", map: "Erawan+Museum", img: "./khao-chee-chan-buddha.jpg" },
+                    { name: "MOCA Bangkok", start: "04:30 PM", end: "06:30 PM", hours: "10:00 AM - 06:00 PM (Closed Mon)", dur: "2 hrs", cost: 300, famous: "Modern Masterpieces", see: "Thailand's best collection of modern art.", do: "Explore five floors of stunning Thai contemporary art.", map: "MOCA+Bangkok", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" }
                 ],
                 "Food": [
                     { name: "Sunset Drink", start: "07:30 PM", end: "09:00 PM", hours: "05:00 PM - 12:30 AM", dur: "1.5 hrs", cost: 800, dish: "Final Toast", see: "The setting sun over the sparkling BKK high-rises.", do: "Raise a glass to the perfect quest.", map: "Sirocco+Sky+Bar", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800" }
@@ -225,6 +225,7 @@ function renderCategory(dIdx, cat) {
                         
                         <div class="item-meta">
                             <div class="meta-box"><strong>DUR / STAY</strong> ${it.dur}</div>
+                            <div class="meta-box"><strong>EST. COST</strong> ${it.cost} THB</div>
                             <div class="meta-box"><strong>OFFICIAL HOURS</strong> ${it.hours}</div>
                         </div>
 
