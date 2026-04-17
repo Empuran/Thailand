@@ -49,7 +49,7 @@ const data = {
                 "Activities": [
                     { name: "Art in Paradise", start: "02:00 PM", dur: "1.5 hrs", cost: 500, reach: "02:00 PM", famous: "3D Trick Art", see: "Massive wall-to-floor illusions.", do: "Take creative 3D photos.", book: "Klook", map: "Art+in+Paradise+Pattaya", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" },
                     { name: "Big Buddha + Wang Sam Sien", start: "04:30 PM", dur: "2 hrs", cost: 0, reach: "04:30 PM", famous: "Heritage Hill", see: "Golden Buddha & Chinese Temple.", do: "Watch sunset from the hill.", map: "Wat+Phra+Yai+Pattaya", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" },
-                    { name: "Nong Nooch Garden", start: "07:00 PM", dur: "2 hrs", cost: 500, reach: "07:00 PM", famous: "Botanical Legend", see: "Illuminated evening gardens.", do: "See the dinosaur valley at night.", book: "Klook", map: "Nong+Nooch+Tropical+Garden", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
+                    { name: "Buddha Mountain (Khao Chi Chan)", start: "07:00 PM", dur: "1 hr", cost: 0, reach: "07:00 PM", famous: "Laser-Engraved Cliff", see: "130m tall golden Buddha on a cliff.", do: "Photography and peaceful walk.", set: "Na Jomtien", map: "Khao+Chi+Chan+Pattaya", img: "https://images.unsplash.com/photo-1629814421447-353d7195484a?q=80&w=800" }
                 ],
                 "Food": [
                     { name: "The Sky Gallery", start: "09:00 PM", dur: "1.5 hrs", cost: 600, reach: "09:00 PM", dish: "Phad Thai Lobster", see: "Cliffs overlooking the ocean.", do: "Late dinner with seaside breeze.", map: "Sky+Gallery+Pattaya", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800" }
@@ -143,7 +143,7 @@ function renderSlides() {
     v.innerHTML = `<div style="height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('${data.vibe.bg}') no-repeat center/cover; border-radius:30px; color:#fff; padding:40px;">
         <p style="letter-spacing:1px; font-weight:800; opacity:0.8;">${data.vibe.subtitle}</p>
         <h1 style="font-size:4rem; font-weight:900; line-height:1; text-transform:uppercase;">${data.vibe.title}</h1>
-        <button class="btn-map" onclick="nextSlide()" style="margin-top:30px; width:auto; padding:15px 40px;">ENTER QUEST</button>
+        <button onclick="nextSlide()" style="margin-top:40px; padding:18px 45px; background:var(--primary); color:#fff; border:none; border-radius:50px; font-weight:900; font-size:1rem; cursor:pointer; box-shadow:0 10px 40px rgba(0,0,0,0.3); transition: transform 0.2s;">ENTER JOURNEY</button>
     </div>`;
     slider.appendChild(v);
 
