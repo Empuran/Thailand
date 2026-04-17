@@ -25,7 +25,7 @@ const data = {
                     { name: "Tiger Park Pattaya", start: "12:00 PM", dur: "1.5 hrs", cost: 600, reach: "12:00 PM", famous: "Tiger Interaction", see: "Majestic tigers in a park setting.", do: "Photo op with medium tigers.", book: "Klook", map: "Tiger+Park+Pattaya", transport: "Bolt (80 THB)", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" }
                 ],
                 "Activities": [
-                    { name: "Sanctuary of Truth", start: "02:30 PM", dur: "2.5 hrs", cost: 500, reach: "02:30 PM", famous: "Wooden Architecture", see: "Entirely hand-carved wooden museum.", do: "Join the mandatory guided tour.", book: "Tripadvisor", map: "Sanctuary+of+Truth+Pattaya", transport: "Bolt (120 THB)", img: "https://images.unsplash.com/photo-1528181304800-2f140819898f?q=80&w=800" }
+                    { name: "Sanctuary of Truth", start: "02:30 PM", dur: "2.5 hrs", cost: 500, reach: "02:30 PM", famous: "Wooden Architecture", see: "Entirely hand-carved wooden museum.", do: "Join the mandatory guided tour.", book: "Tripadvisor", map: "Sanctuary+of+Truth+Pattaya", transport: "Bolt (120 THB)", img: "https://images.unsplash.com/photo-1610410058814-1f558a2d1847?q=80&w=800" }
                 ],
                 "Food": [
                     { name: "Pupen Seafood Jomtien", start: "06:30 PM", dur: "1.5 hrs", cost: 450, reach: "06:30 PM", dish: "Poo Pad Pong Karee", see: "Giant crab icon at beach.", do: "Enjoy fresh catch by the water.", map: "Pupen+Seafood+Pattaya", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
