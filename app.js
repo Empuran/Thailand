@@ -115,14 +115,14 @@ const data = {
             sections: {
                 "Morning": [
                     { name: "7:30 AM Breakfast", start: "07:30 AM", end: "08:00 AM", hours: "06:00 AM - 10:00 AM", famous: "Final Start", see: "Calm morning reflections.", do: "Final morning street coffee walk.", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
-                    { name: "Ancient City", start: "09:00 AM", end: "01:00 PM", hours: "09:00 AM - 07:00 PM", dur: "4 hrs", cost: 700, famous: "Mini Thailand", see: "Replicas of Thailand's most famous landmarks.", do: "Rent a golf cart (300 THB) to explore the massive grounds.", book: "Klook", map: "Muang+Boran+Ancient+City", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
+                    { name: "Ancient City", start: "09:00 AM", end: "01:00 PM", hours: "09:00 AM - 07:00 PM", dur: "4 hrs", cost: 700, famous: "Mini Thailand", see: "Replicas of Thailand's most famous landmarks.", do: "Rent a golf cart (300 THB) to explore the massive grounds.", book: "Klook", map: "Muang+Boran+Ancient+City", img: "./ancient city.jpg" }
                 ],
                 "Activities": [
                     { name: "Erawan Museum", start: "02:00 PM", end: "04:00 PM", hours: "09:00 AM - 06:00 PM", dur: "2 hrs", cost: 400, famous: "Giant Elephant", see: "The massive 3-headed elephant bronze sculpture.", do: "Enter the elephant's belly for incredible cosmic art.", map: "Erawan+Museum", img: "./khao-chee-chan-buddha.jpg" },
                     { name: "MOCA Bangkok", start: "04:30 PM", end: "06:30 PM", hours: "10:00 AM - 06:00 PM (Closed Mon)", dur: "2 hrs", cost: 300, famous: "Modern Masterpieces", see: "Thailand's best collection of modern art.", do: "Explore five floors of stunning Thai contemporary art.", map: "MOCA+Bangkok", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" }
                 ],
                 "Food": [
-                    { name: "Sunset Drink", start: "07:30 PM", end: "09:00 PM", hours: "05:00 PM - 12:30 AM", dur: "1.5 hrs", cost: 800, dish: "Final Toast", see: "The setting sun over the sparkling BKK high-rises.", do: "Raise a glass to the perfect quest.", map: "Sirocco+Sky+Bar", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800" }
+                    { name: "Sunset Drink", start: "07:30 PM", end: "09:00 PM", hours: "05:00 PM - 12:30 AM", dur: "1.5 hrs", cost: 800, dish: "Final Toast", see: "The setting sun over the sparkling BKK high-rises.", do: "Raise a glass to the perfect quest.", map: "Sirocco+Sky+Bar", img: "./sunset drink.jpg" }
                 ],
                 "Travel": [
                     { name: "DMK Final bound", start: "10:00 PM", end: "11:00 PM", hours: "DMK: 24/7 Arrivals/Exits", dur: "1 hr", cost: 50, famous: "Departure Leg", see: "Final nighttime views of the city.", do: "Head to Don Mueang for your flight (Grab/A1 Bus).", img: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=800" }
