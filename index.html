@@ -3,83 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thailand Experience 2026 | Pattaya & Bangkok</title>
+    <title>Thailand 2026 | Ultimate Quest</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+        <button class="nav-item active" onclick="switchPage('vibe')">VIBE</button>
+        <button class="nav-item" onclick="switchPage('rules')">RULES</button>
+        <button class="nav-item" onclick="switchPage('plan')">PLAN</button>
+    </nav>
+
+    <!-- Page 1: THE VIBE -->
+    <section id="vibe-page" class="page-section active">
         <div class="animate">
-            <p>MAY 1 - MAY 6, 2026</p>
-            <h1>Thailand Quest</h1>
-            <p>A Premium Budget-Friendly Adventure</p>
+            <h1 class="vibe-title">THAILAND</h1>
+            <p style="font-size: 1.5rem; letter-spacing: 5px; color: var(--accent-primary);">MAY 1 - MAY 6, 2026</p>
+            <div id="countdown" style="margin-top: 20px; font-weight: 800; color: var(--accent-secondary);">
+                <!-- Countdown Ticks Here -->
+            </div>
+            <p style="margin-top: 40px; color: var(--text-secondary); max-width: 600px;">
+                A high-density experience across Pattaya & Bangkok. From floating temples to neon streets.
+            </p>
         </div>
-    </header>
+    </section>
 
-    <div class="container">
-        <!-- Day Selector Tabs -->
-        <div class="day-selector">
-            <button class="glass day-btn active" onclick="showDay(1)">DAY 1</button>
-            <button class="glass day-btn" onclick="showDay(2)">DAY 2</button>
-            <button class="glass day-btn" onclick="showDay(3)">DAY 3</button>
-            <button class="glass day-btn" onclick="showDay(4)">DAY 4</button>
-            <button class="glass day-btn" onclick="showDay(5)">DAY 5</button>
+    <!-- Page 2: THE RULES (Dos & Don'ts) -->
+    <section id="rules-page" class="page-section">
+        <div class="container">
+            <h2 style="font-size: 3rem; text-align: center; margin-bottom: 40px;">THE RULES</h2>
+            <div class="rules-grid">
+                <div class="rule-card legal animate">
+                    <h3><i data-lucide="shield-alert"></i> 2026 Legal Warnings</h3>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li>🚫 <strong>Vaping:</strong> 100% Illegal. Possession = Arrest.</li>
+                        <li>🌿 <strong>Cannabis:</strong> Medical only. Needs prescription (available on-site). No public smoking.</li>
+                        <li>👑 <strong>Monarchy:</strong> Never joke/criticize the Royal Family. Very strict laws!</li>
+                    </ul>
+                </div>
+                <div class="rule-card culture animate">
+                    <h3><i data-lucide="landmark"></i> Temple Etiquette</h3>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li>👗 <strong>Dress Code:</strong> Shoulders and knees MUST be covered. No tank tops.</li>
+                        <li>👟 <strong>Shoes:</strong> Remove before entering any shrine or house.</li>
+                        <li>🧘 <strong>Buddha:</strong> Never point your feet at Buddha statues.</li>
+                    </ul>
+                </div>
+                <div class="rule-card warning animate">
+                    <h3><i data-lucide="alert-triangle"></i> Pro Tips</h3>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li>🛵 <strong>Scooters:</strong> Don't ride without a license/helmet. Highly dangerous.</li>
+                        <li>🇹🇭 <strong>Anthem:</strong> Stand still if the National Anthem plays (8 AM/6 PM in public).</li>
+                        <li>💧 <strong>Hydration:</strong> Tap water IS NOT safe. Drink bottled only.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="itinerary-section">
-            <!-- Timeline Section -->
-            <div id="itinerary-content" class="timeline glass animate">
-                <!-- Content injected by JS -->
+    <!-- Page 3: THE PLAN (Detailed Itinerary) -->
+    <section id="plan-page" class="page-section">
+        <div class="container">
+            <!-- Day Tabs -->
+            <div class="day-tabs">
+                <button class="day-tab active" onclick="showDay(1)">D1: Landing</button>
+                <button class="day-tab" onclick="showDay(2)">D2: Pattaya</button>
+                <button class="day-tab" onclick="showDay(3)">D3: Bangkok</button>
+                <button class="day-tab" onclick="showDay(4)">D4: Icons</button>
+                <button class="day-tab" onclick="showDay(5)">D5: Departure</button>
             </div>
 
-            <!-- Budget & Transport Sidebar -->
-            <aside class="budget-card glass animate">
-                <h3><i data-lucide="wallet"></i> Daily Budget</h3>
-                <div id="budget-items">
-                    <!-- Content injected by JS -->
-                </div>
-                <div class="total-budget">
+            <!-- Budget Tracker (Sticky on Plan Page) -->
+            <div class="budget-summary">
+                <h4 style="margin-bottom: 10px; color: var(--accent-success);">TODAY'S SPEND</h4>
+                <div id="budget-breakdown"></div>
+                <hr style="border-color: var(--glass-border); margin: 10px 0;">
+                <div class="budget-item" style="font-weight: 800; color: var(--accent-success);">
                     <span>TOTAL</span>
-                    <span id="total-amount">0 THB</span>
-                </div>
-                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 15px;">
-                    *Per Person. Target: 2,500 THB/Day
-                </p>
-            </aside>
-        </div>
-
-        <!-- Extra Guides Section -->
-        <div class="extra-grid">
-            <div class="info-card glass animate">
-                <h4><i data-lucide="leaf"></i> Cannabis Corner (2026)</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 10px;">New 2026 Regulations: Medical Prescription Required.</p>
-                <ul style="list-style: none; font-size: 0.9rem;">
-                    <li>💨 <strong>Cloud Nine (BKK):</strong> Asok Interchange. In-house doctor.</li>
-                    <li>💨 <strong>SIAM GREEN (BKK):</strong> Phrom Phong. Premium Wellness.</li>
-                    <li>💨 <strong>MaxYield Farm (PTY):</strong> Jomtien. Organic & Pure.</li>
-                    <li style="margin-top: 10px; color: var(--accent-secondary);"><i data-lucide="alert-circle"></i> Don't smoke in public! Fines are heavy.</li>
-                </ul>
-            </div>
-
-            <div class="info-card glass animate">
-                <h4><i data-lucide="bus"></i> Transport Hacks</h4>
-                <p style="font-size: 0.9rem;">Best ways to save on travel:</p>
-                <div style="margin-top: 10px;">
-                    <span class="tag">Direct Bus</span> DMK Airport Gate 2 (10:30 AM).
-                    <span class="tag">A1 Bus</span> To Mo Chit Terminal (30 THB).
-                    <span class="tag">Baht Bus</span> Pattaya flat rate (10 THB).
-                    <span class="tag">BTS/MRT</span> Bangkok interchanges (17-60 THB).
+                    <span id="day-total">0 THB</span>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <footer style="text-align: center; padding: 40px; color: var(--text-secondary);">
-        <p>Built with ❤️ for your Thailand Trip | May 2026</p>
-    </footer>
+            <div id="itinerary-list" style="max-width: 800px; margin: 0 auto;">
+                <!-- Events injected by JS -->
+            </div>
+        </div>
+    </section>
 
     <script src="app.js"></script>
     <script>lucide.createIcons();</script>

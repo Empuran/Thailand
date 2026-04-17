@@ -1,123 +1,121 @@
 const itineraryData = {
     1: {
         events: [
-            { time: "08:30 AM", title: "Landing at DMK", desc: "Arrival from Kochi. Proceed to Immigration and Luggage." },
-            { time: "10:30 AM", title: "Direct Bus to Pattaya", desc: "Catch the direct bus from Airport Service Hall (Gate 2). Cost: 200 THB." },
-            { time: "01:30 PM", title: "Pattaya Arrival", desc: "Check-in at hotel (Central Pattaya). Relax after travel." },
-            { time: "04:00 PM", title: "Sanctuary of Truth", desc: "Explore the massive wooden temple. Stunning reviews. Reach via Baht Bus (10 THB)." },
-            { time: "07:00 PM", title: "Walking Street", desc: "Vibrant nightlife. Explore pubs and street food atmosphere." },
-            { time: "09:00 PM", title: "Nightlife: Hops Brew House", desc: "Famous for craft beer and great vibe. Part of the Nightlife budget." }
+            { time: "08:30 AM", title: "DMK Landing", desc: "Arrival. Immigration & Luggage.", duration: "1.5 hrs", spend: "0", map: "https://maps.app.goo.gl/DMKAirport", booking: "None" },
+            { time: "10:30 AM", title: "Direct Bus to Pattaya", desc: "Gate 2 Service Hall. Buy tickets near arrival.", duration: "3 hrs", spend: "200", map: "https://maps.app.goo.gl/PattayaBus", booking: "On-site" },
+            { time: "02:30 PM", title: "Hotel Check-in (Pattaya)", desc: "Stay Central (Beach Rd area).", duration: "1 hr", spend: "0", map: "https://maps.app.goo.gl/BeachRd", booking: "Recommended" },
+            { time: "04:00 PM", title: "Sanctuary of Truth", desc: "Hand-carved wooden temple. Amazing architecture.", duration: "3 hrs", spend: "500", map: "https://maps.app.goo.gl/SanctuaryOfTruthMap", booking: "Klook/Site" },
+            { time: "08:00 PM", title: "Dinner @ The Sky Gallery", desc: "Sunset views over the Pattaya bay.", duration: "2 hrs", spend: "600", map: "https://maps.app.goo.gl/SkyGalleryPattaya", booking: "Optional" },
+            { time: "10:00 PM", title: "Walking Street", desc: "The heart of Pattaya nightlife until late.", duration: "4 hrs", spend: "800", map: "https://maps.app.goo.gl/WalkingStreetMap", booking: "None" }
         ],
-        budget: {
-            "Transport (Bus+Baht)": 230,
-            "Entry: Sanctuary": 500,
-            "Food (Street)": 400,
-            "Nightlife/Beer": 800,
-            "Misc/Weed": 500
-        }
+        budget: { "Transport": 250, "Food": 600, "Entry": 500, "Nightlife": 800 }
     },
     2: {
         events: [
-            { time: "09:00 AM", title: "Koh Larn (Coral Island)", desc: "Take the slow boat from Bali Hai Pier (30 THB). Swimming and beach time." },
-            { time: "01:00 PM", title: "Seafood Lunch", desc: "Eat at local stalls on the island for fresh value-for-money seafood." },
-            { time: "04:00 PM", title: "Return to Mainland", desc: "Ferry back to Pattaya. Foot massage (200 THB) near Beach Road." },
-            { time: "06:30 PM", title: "Viewpoint & Big Buddha", desc: "Panoramic view of Pattaya. Free entry, reach via Baht Bus." },
-            { time: "08:30 PM", title: "Dinner: Lung Sawai", desc: "Located at Jomtien. Authentic seafood. Very famous local spot." },
-            { time: "10:30 PM", title: "Nightlife: Hot Tuna Bar", desc: "Live rock music on Walking Street." }
+            { time: "07:30 AM", title: "Start: Head to Pier", desc: "Bali Hai Pier for Koh Larn speedboats.", duration: "30 min", spend: "20", map: "https://maps.app.goo.gl/BaliHaiPier", booking: "None" },
+            { time: "08:30 AM", title: "Koh Larn (Coral Island)", desc: "Swimming, snorkeling, beaches. Speedboat is 15min.", duration: "5 hrs", spend: "300", map: "https://maps.app.goo.gl/KohLarnMap", booking: "On-site" },
+            { time: "02:30 PM", title: "Art in Paradise", desc: "3D Illusion art gallery. Pro-level photos.", duration: "1.5 hrs", spend: "500", map: "https://maps.app.goo.gl/ArtInParadisePTY", booking: "Klook" },
+            { time: "04:30 PM", title: "Tiger Park Pattaya", desc: "Observation or tiger interactions.", duration: "1.5 hrs", spend: "300", map: "https://maps.app.goo.gl/TigerParkPTY", booking: "Site/Klook" },
+            { time: "06:30 PM", title: "Pattaya Floating Market", desc: "Riverboat ride and local snacks.", duration: "2 hrs", spend: "200", map: "https://maps.app.goo.gl/PTYFloatingMarket", booking: "Klook" },
+            { time: "08:30 PM", title: "Alcazar Cabaret Show", desc: "Pattaya's world-famous performance.", duration: "1.5 hrs", spend: "600", map: "https://maps.app.goo.gl/AlcazarShowPTY", booking: "PRE-BOOK" },
+            { time: "11:00 PM", title: "Late Night: Walking St", desc: "Go-go bars, live music, late night vibe.", duration: "3 hrs", spend: "500", map: "https://maps.app.goo.gl/WalkingStreetMap", booking: "None" }
         ],
-        budget: {
-            "Transport (Ferry+Baht)": 80,
-            "Massage": 200,
-            "Food (Seafood)": 800,
-            "Nightlife": 700,
-            "Misc/Weed": 700
-        }
+        budget: { "Transport": 100, "Food": 500, "Entry": 1600, "Nightlife": 500 }
     },
     3: {
         events: [
-            { time: "09:00 AM", title: "Bus to Bangkok", desc: "Depart from North Pattaya Bus Terminal (Bus: 160 THB) to Ekkamai." },
-            { time: "12:00 PM", title: "Bangkok Check-in", desc: "Stay near Sukhumvit (Asok). Use BTS from Ekkamai to Asok (30 THB)." },
-            { time: "02:30 PM", title: "ICONSIAM", desc: "Take BTS + Gold Line. Explore the high-end mall and indoor market (SookSiam)." },
-            { time: "06:00 PM", title: "Asiatique The Riverfront", desc: "Evening Riverside walk. Take the free shuttle boat from Sathorn Pier." },
-            { time: "09:00 PM", title: "Soi 11 Nightlife", desc: "Explore various bars/pubs on Sukhumvit Soi 11 (Levels / Hillary)." }
+            { time: "07:00 AM", title: "Bus to Bangkok", desc: "Depart from North Pattaya Terminal.", duration: "3 hrs", spend: "160", map: "https://maps.app.goo.gl/NTerminal", booking: "On-site" },
+            { time: "11:00 AM", title: "BKK Hotel Check-in", desc: "Sukhumvit / Asok Interchange area.", duration: "1 hr", spend: "50", map: "https://maps.app.goo.gl/AsokMap", booking: "Recommended" },
+            { time: "02:30 PM", title: "ICONSIAM", desc: "The mega-mall. Street food indoor (SookSiam).", duration: "3 hrs", spend: "400", map: "https://maps.app.goo.gl/IconsiamMap", booking: "None" },
+            { time: "06:30 PM", title: "Asiatique Riverside", desc: "Ferris wheel and market dinner.", duration: "2 hrs", spend: "500", map: "https://maps.app.goo.gl/AsiatiqueMap", booking: "None" },
+            { time: "09:30 PM", title: "Nana/Soi 11 Pubs", desc: "Bangkok's best bar street.", duration: "4 hrs", spend: "1000", map: "https://maps.app.goo.gl/Soi11Map", booking: "None" }
         ],
-        budget: {
-            "Transport (Bus+BTS)": 250,
-            "Food (SookSiam)": 500,
-            "Nightlife/Drinks": 1000,
-            "Misc/Weed": 700
-        }
+        budget: { "Transport": 250, "Food": 900, "Nightlife": 1000 }
     },
     4: {
         events: [
-            { time: "08:30 AM", title: "Grand Palace", desc: "Iconic must-visit. Entry: 500 THB. Dress code: No shorts/sleeveless." },
-            { time: "11:00 AM", title: "Wat Pho", desc: "Reclining Buddha (300 THB). Reach via MRT to Sanam Chai." },
-            { time: "01:30 PM", title: "Wat Arun", desc: "Cross-river ferry (5 THB). Entry: 200 THB. The best for photos." },
-            { time: "04:00 PM", title: "Chinatown (Yaowarat)", desc: "Explore during the day before the food stalls open. Visit Wat Traimit." },
-            { time: "07:00 PM", title: "Street Food Feast", desc: "Eat everything in Chinatown. Budget-friendly and world-famous." },
-            { time: "10:00 PM", title: "Tichuca Rooftop Bar", desc: "Jungle-themed. Stunning views. Note: Expensive menu, but great atmosphere." }
+            { time: "08:30 AM", title: "Grand Palace", desc: "Cultural icon. Must see.", duration: "2.5 hrs", spend: "500", map: "https://maps.app.goo.gl/GrandPalaceMap", booking: "Essential" },
+            { time: "11:30 AM", title: "Wat Pho", desc: "Reclining Buddha & Massage School.", duration: "1.5 hrs", spend: "300", map: "https://maps.app.goo.gl/WatPhoMap", booking: "On-site" },
+            { time: "02:00 PM", title: "Wat Arun", desc: "Temple of Dawn. Cross-river ferry.", duration: "1.5 hrs", spend: "200", map: "https://maps.app.goo.gl/WatArunMap", booking: "None" },
+            { time: "06:00 PM", title: "Chinatown Street Food", desc: "Yaowarat Road dinner feast.", duration: "3 hrs", spend: "600", map: "https://maps.app.goo.gl/YaowaratMap", booking: "None" },
+            { time: "10:00 PM", title: "Tichuca Rooftop Bar", desc: "Avatar tree lighting. View of BKK.", duration: "2 hrs", spend: "800", map: "https://maps.app.goo.gl/TichucaMap", booking: "Recommended" }
         ],
-        budget: {
-            "Transport (MRT+Boat)": 150,
-            "Entry: Palace+Temples": 1000,
-            "Food (Yaowarat)": 600,
-            "Nightlife/Drinks": 700
-        }
+        budget: { "Transport": 100, "Food": 600, "Entry": 1000, "Nightlife": 800 }
     },
     5: {
         events: [
-            { time: "10:30 AM", title: "Siam Shopping Spree", desc: "MBK, Siam Square, Siam Paragon. Perfect for gifts." },
-            { time: "01:00 PM", title: "Value Lunch: Food Court", desc: "Eat at MBK or Terminal 21 food courts. 100 THB/meal." },
-            { time: "03:30 PM", title: "Jodd Fairs Market", desc: "Modern night market. Open in afternoon. Reach via MRT to Rama 9." },
-            { time: "06:30 PM", title: "Final Massage & Weed", desc: "Last relaxation before departure. Cloud Nine nearby Asok." },
-            { time: "08:30 PM", title: "Head to DMK", desc: "Catch the A1 bus from Mo Chit (30 THB) or MRT/SRT Red Line." },
-            { time: "10:30 PM", title: "Flight to Kochi", desc: "Safe travels back home!" }
+            { time: "10:30 AM", title: "Siam Paragon / MBK", desc: "Shopping and food courts.", duration: "3 hrs", spend: "400", map: "https://maps.app.goo.gl/SiamParagonMap", booking: "None" },
+            { time: "02:30 PM", title: "Jodd Fairs Market", desc: "Trendy night food market.", duration: "3 hrs", spend: "500", map: "https://maps.app.goo.gl/JoddFairsMap", booking: "None" },
+            { time: "06:30 PM", title: "Last Massage: Cloud Nine", desc: "Wellness & Cannabis. Near Asok.", duration: "1.5 hrs", spend: "500", map: "https://maps.app.goo.gl/CloudNineMap", booking: "None" },
+            { time: "08:30 PM", title: "Header to Airport", desc: "A1 Bus or MRT to DMK.", duration: "1 hr", spend: "100", map: "https://maps.app.goo.gl/DMKAirport", booking: "None" },
+            { time: "10:30 PM", title: "Flight Back Home", desc: "Safe travels!", duration: "End", spend: "0", map: "", booking: "" }
         ],
-        budget: {
-            "Transport (MRT+Bus)": 120,
-            "Shopping/Misc": 1000,
-            "Food": 400,
-            "Final Massage": 300,
-            "Misc/Weed": 600
-        }
+        budget: { "Transport": 100, "Food": 900, "Leisure": 1000 }
     }
 };
 
-function showDay(day) {
-    // Update active button
-    document.querySelectorAll('.day-btn').forEach(btn => btn.classList.remove('active'));
-    document.querySelector(`.day-btn:nth-child(${day})`).classList.add('active');
-
-    // Update Timeline Content
-    const timeline = document.getElementById('itinerary-content');
-    timeline.innerHTML = '';
+function switchPage(pageId) {
+    document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
     
-    itineraryData[day].events.forEach(event => {
-        const eventEl = document.createElement('div');
-        eventEl.className = 'event';
-        eventEl.innerHTML = `
-            <span class="event-time">${event.time}</span>
-            <div class="event-title">${event.title}</div>
-            <div class="event-desc">${event.desc}</div>
-        `;
-        timeline.appendChild(eventEl);
-    });
-
-    // Update Budget Sidebar
-    const budgetList = document.getElementById('budget-items');
-    budgetList.innerHTML = '';
-    let total = 0;
-    
-    for (const [item, price] of Object.entries(itineraryData[day].budget)) {
-        total += price;
-        const itemEl = document.createElement('div');
-        itemEl.className = 'budget-item';
-        itemEl.innerHTML = `<span>${item}</span><span>${price} THB</span>`;
-        budgetList.appendChild(itemEl);
-    }
-
-    document.getElementById('total-amount').innerText = `${total} THB`;
+    document.getElementById(pageId + '-page').classList.add('active');
+    document.querySelector(`[onclick="switchPage('${pageId}')"]`).classList.add('active');
+    window.scrollTo(0, 0);
 }
 
-// Initial render
-document.addEventListener('DOMContentLoaded', () => showDay(1));
+function showDay(day) {
+    document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+    document.querySelector(`.day-tab:nth-child(${day})`).classList.add('active');
+
+    const list = document.getElementById('itinerary-list');
+    list.innerHTML = '';
+    
+    itineraryData[day].events.forEach(ev => {
+        const card = document.createElement('div');
+        card.className = 'event-card animate';
+        card.innerHTML = `
+            <div class="event-time">${ev.time}</div>
+            <div class="event-info">
+                <h4>${ev.title}</h4>
+                <p>${ev.desc}</p>
+                <div style="margin-top: 10px;">
+                    <span class="badge badge-blue">Spend: ${ev.duration}</span>
+                    <span class="badge badge-price">Cost: ${ev.spend} THB</span>
+                </div>
+            </div>
+            <div class="event-meta">
+                ${ev.map ? `<a href="${ev.map}" target="_blank" class="map-btn"><i data-lucide="map-pin"></i> MAP</a>` : ''}
+                <span style="font-size: 0.7rem; color: var(--text-secondary);">BOOKING: ${ev.booking}</span>
+            </div>
+        `;
+        list.appendChild(card);
+    });
+
+    const breakdown = document.getElementById('budget-breakdown');
+    breakdown.innerHTML = '';
+    let total = 0;
+    for (const [key, value] of Object.entries(itineraryData[day].budget)) {
+        total += value;
+        breakdown.innerHTML += `<div class="budget-item"><span>${key}</span><span>${value} THB</span></div>`;
+    }
+    document.getElementById('day-total').innerText = total + " THB";
+    lucide.createIcons();
+}
+
+// Countdown Logic
+function updateCountdown() {
+    const tripDate = new Date("May 1, 2026 08:30:00").getTime();
+    const now = new Date().getTime();
+    const diff = tripDate - now;
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = `${d}D ${h}H ${m}M ${s}S UNTIL TAKE OFF`;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+showDay(1);
