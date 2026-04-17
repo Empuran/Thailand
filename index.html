@@ -3,95 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thailand 2026 | Ultimate Quest</title>
+    <title>Thailand Experience 2026</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-    <!-- Main Navigation Bar -->
-    <nav class="main-nav">
-        <button class="nav-item active" onclick="switchPage('vibe')">VIBE</button>
-        <button class="nav-item" onclick="switchPage('rules')">RULES</button>
-        <button class="nav-item" onclick="switchPage('plan')">PLAN</button>
-    </nav>
-
-    <!-- Page 1: THE VIBE -->
-    <section id="vibe-page" class="page-section active">
-        <div class="animate">
-            <h1 class="vibe-title">THAILAND</h1>
-            <p style="font-size: 1.5rem; letter-spacing: 5px; color: var(--accent-primary);">MAY 1 - MAY 6, 2026</p>
-            <div id="countdown" style="margin-top: 20px; font-weight: 800; color: var(--accent-secondary);">
-                <!-- Countdown Ticks Here -->
-            </div>
-            <p style="margin-top: 40px; color: var(--text-secondary); max-width: 600px;">
-                A high-density experience across Pattaya & Bangkok. From floating temples to neon streets.
-            </p>
+    <!-- 1. HERO SECTION -->
+    <section id="vibe-section">
+        <div class="hero-content">
+            <p>MAY 1 - MAY 6, 2026</p>
+            <h1>Thailand Quest</h1>
+            <div id="countdown" style="margin-top: 20px; font-weight: 800; color: var(--accent-magenta);"></div>
+        </div>
+        <div class="scroll-indicator">
+            Scroll to Explore <br> ↓
         </div>
     </section>
 
-    <!-- Page 2: THE RULES (Dos & Don'ts) -->
-    <section id="rules-page" class="page-section">
+    <!-- 2. RULES SECTION -->
+    <section id="rules-section">
         <div class="container">
-            <h2 style="font-size: 3rem; text-align: center; margin-bottom: 40px;">THE RULES</h2>
+            <div class="section-header">
+                <h2>THE RULES</h2>
+                <p style="color: var(--text-dim);">Essential Dos & Don'ts for your safety</p>
+            </div>
+            
             <div class="rules-grid">
-                <div class="rule-card legal animate">
-                    <h3><i data-lucide="shield-alert"></i> 2026 Legal Warnings</h3>
-                    <ul style="list-style: none; color: var(--text-secondary);">
+                <div class="rule-card legal">
+                    <h3><i data-lucide="shield-alert"></i> 2026 Legal</h3>
+                    <ul>
                         <li>🚫 <strong>Vaping:</strong> 100% Illegal. Possession = Arrest.</li>
-                        <li>🌿 <strong>Cannabis:</strong> Medical only. Needs prescription (available on-site). No public smoking.</li>
-                        <li>👑 <strong>Monarchy:</strong> Never joke/criticize the Royal Family. Very strict laws!</li>
+                        <li>🌿 <strong>Cannabis:</strong> Medical only. In-house prescriptions needed.</li>
+                        <li>👑 <strong>Monarchy:</strong> Zero tolerance for jokes/insults.</li>
                     </ul>
                 </div>
-                <div class="rule-card culture animate">
-                    <h3><i data-lucide="landmark"></i> Temple Etiquette</h3>
-                    <ul style="list-style: none; color: var(--text-secondary);">
-                        <li>👗 <strong>Dress Code:</strong> Shoulders and knees MUST be covered. No tank tops.</li>
-                        <li>👟 <strong>Shoes:</strong> Remove before entering any shrine or house.</li>
-                        <li>🧘 <strong>Buddha:</strong> Never point your feet at Buddha statues.</li>
+                <div class="rule-card culture">
+                    <h3><i data-lucide="landmark"></i> Culture</h3>
+                    <ul>
+                        <li>👗 <strong>Temples:</strong> Cover shoulders and knees. No exceptions.</li>
+                        <li>👟 <strong>Shoes:</strong> Off at the door for temples/homes.</li>
+                        <li>🧘 <strong>Buddha:</strong> Never point feet at statues.</li>
                     </ul>
                 </div>
-                <div class="rule-card warning animate">
+                <div class="rule-card warning">
                     <h3><i data-lucide="alert-triangle"></i> Pro Tips</h3>
-                    <ul style="list-style: none; color: var(--text-secondary);">
-                        <li>🛵 <strong>Scooters:</strong> Don't ride without a license/helmet. Highly dangerous.</li>
-                        <li>🇹🇭 <strong>Anthem:</strong> Stand still if the National Anthem plays (8 AM/6 PM in public).</li>
-                        <li>💧 <strong>Hydration:</strong> Tap water IS NOT safe. Drink bottled only.</li>
+                    <ul>
+                        <li>🛵 <strong>Traffic:</strong> Avoid scooters without Inter-license.</li>
+                        <li>🇹🇭 <strong>Hymn:</strong> Stop moving if National Anthem plays.</li>
+                        <li>💧 <strong>Water:</strong> Bottled water ONLY. No tap water.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Page 3: THE PLAN (Detailed Itinerary) -->
-    <section id="plan-page" class="page-section">
+    <!-- 3. PLAN SECTION -->
+    <section id="plan-section">
         <div class="container">
-            <!-- Day Tabs -->
-            <div class="day-tabs">
-                <button class="day-tab active" onclick="showDay(1)">D1: Landing</button>
-                <button class="day-tab" onclick="showDay(2)">D2: Pattaya</button>
-                <button class="day-tab" onclick="showDay(3)">D3: Bangkok</button>
-                <button class="day-tab" onclick="showDay(4)">D4: Icons</button>
-                <button class="day-tab" onclick="showDay(5)">D5: Departure</button>
+            <div class="section-header">
+                <h2>THE PLAN</h2>
+                <p style="color: var(--text-dim);">Your Daily High-Density Adventure</p>
             </div>
 
-            <!-- Budget Tracker (Sticky on Plan Page) -->
-            <div class="budget-summary">
-                <h4 style="margin-bottom: 10px; color: var(--accent-success);">TODAY'S SPEND</h4>
-                <div id="budget-breakdown"></div>
-                <hr style="border-color: var(--glass-border); margin: 10px 0;">
-                <div class="budget-item" style="font-weight: 800; color: var(--accent-success);">
-                    <span>TOTAL</span>
-                    <span id="day-total">0 THB</span>
-                </div>
+            <!-- Sticky Navigation -->
+            <div class="day-sticky-nav">
+                <button class="day-nav-btn active" onclick="showDay(1)">DAY 1: LANDING</button>
+                <button class="day-nav-btn" onclick="showDay(2)">DAY 2: PATTAYA</button>
+                <button class="day-nav-btn" onclick="showDay(3)">DAY 3: TO BANGKOK</button>
+                <button class="day-nav-btn" onclick="showDay(4)">DAY 4: ICONS</button>
+                <button class="day-nav-btn" onclick="showDay(5)">DAY 5: DEPARTURE</button>
             </div>
 
-            <div id="itinerary-list" style="max-width: 800px; margin: 0 auto;">
+            <div id="itinerary-list" class="event-list">
                 <!-- Events injected by JS -->
             </div>
         </div>
     </section>
+
+    <!-- Float Budget Sticky -->
+    <div class="budget-sticky">
+        TODAY'S BUDGET: <span id="day-total">0 THB</span>
+    </div>
 
     <script src="app.js"></script>
     <script>lucide.createIcons();</script>
