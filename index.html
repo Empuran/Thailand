@@ -3,55 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thailand 2026 | Quest</title>
+    <title>Thailand 2026 | Ultimate Quest</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-    <!-- 1. Vibe Section (Landing) -->
-    <section id="vibe-section">
-        <p>MAY 1 - MAY 6, 2026</p>
-        <h1>Thailand<br>Quest</h1>
-        <div id="countdown" style="font-weight: 800; opacity: 0.9;"></div>
-        <button class="btn-start" onclick="startApp()">START JOURNEY</button>
-    </section>
+    <div class="slider-container" id="slider">
+        <!-- Slides dynamically injected by app.js -->
+    </div>
 
-    <!-- 2. Main App Container -->
-    <main id="app-main" style="display: none;">
-        <header class="header">
-            <div class="day-nav">
-                <div class="day-tab active" onclick="showSection('rules', this)">THE RULES</div>
-                <div class="day-tab" onclick="showSection('day-1', this)">DAY 1</div>
-                <div class="day-tab" onclick="showSection('day-2', this)">DAY 2</div>
-                <div class="day-tab" onclick="showSection('day-3', this)">DAY 3</div>
-                <div class="day-tab" onclick="showSection('day-4', this)">DAY 4</div>
-                <div class="day-tab" onclick="showSection('day-5', this)">DAY 5</div>
-            </div>
-        </header>
-
-        <div class="container">
-            <!-- Rules Section -->
-            <div id="rules" class="rules-container active">
-                <h2 style="margin-bottom: 25px; font-weight: 900;">ESSENTIAL RULES</h2>
-                <div class="rule-item">
-                    <h3><i data-lucide="shield-alert"></i> 2026 Legal Warnings</h3>
-                    <li>🚫 <strong>Vaping:</strong> 100% Forbidden. Possession = Arrest.</li>
-                    <li>🌿 <strong>Cannabis:</strong> In-store only. No public smoking.</li>
-                    <li>👑 <strong>Monarchy:</strong> Zero tolerance for jokes/insults.</li>
-                </div>
-                <div class="rule-item culture">
-                    <h3><i data-lucide="landmark"></i> Cultural Etiquette</h3>
-                    <li>👗 <strong>Temples:</strong> Cover shoulders and knees.</li>
-                    <li>👟 <strong>Shoes:</strong> Remove before entering homes/temples.</li>
-                    <li>🦶 <strong>Feet:</strong> Never point feet at people or Buddha.</li>
-                </div>
-            </div>
-
-            <!-- Itinerary Days (Injected by JS) -->
-            <div id="itinerary-days"></div>
-        </div>
-    </main>
+    <!-- Persistent Controls -->
+    <div class="nav-controls">
+        <div class="arrow" id="prevBtn" onclick="prevSlide()"><i data-lucide="chevron-left"></i></div>
+        <div class="dots" id="dotGroup"></div>
+        <div class="arrow" id="nextBtn" onclick="nextSlide()"><i data-lucide="chevron-right"></i></div>
+    </div>
 
     <script src="./app.js"></script>
     <script>lucide.createIcons();</script>
