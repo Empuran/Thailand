@@ -34,7 +34,7 @@ const data = {
                     { name: "Walking Street", start: "09:00 PM", dur: "Till 2 AM", cost: 800, reach: "09:00 PM", famous: "Party Center", see: "Neon lights and electric vibe.", do: "Experience the bars and live music.", map: "Pattaya+Walking+Street", img: "https://images.unsplash.com/photo-1590732152668-f9bcf040375a?q=80&w=800" }
                 ],
                 "Weed": [
-                    { name: "Cloud Nine", start: "11:30 PM", dur: "1 hr", cost: 400, reach: "11:30 PM", famous: "Cloud Theme", desc: "Top shelf flower in a surreal setting.", map: "Cloud+Nine+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1589139044941-84196d07d6d5?q=80&w=800" }
+                    { name: "Cloud Nine", start: "11:30 PM", dur: "1 hr", cost: 400, reach: "11:30 PM", famous: "Cloud Theme", desc: "Top shelf flower in a surreal setting.", map: "Cloud+Nine+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1628191010210-a597bd1a548c?q=80&w=800" }
                 ]
             }
         },
