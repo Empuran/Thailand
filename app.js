@@ -28,7 +28,7 @@ const data = {
                     { name: "Sanctuary of Truth", start: "02:30 PM", dur: "2.5 hrs", cost: 500, reach: "02:30 PM", famous: "Wooden Architecture", see: "Entirely hand-carved wooden museum.", do: "Join the mandatory guided tour.", book: "Tripadvisor", map: "Sanctuary+of+Truth+Pattaya", transport: "Bolt (120 THB)", img: "https://images.unsplash.com/photo-1610410058814-1f558a2d1847?q=80&w=800" }
                 ],
                 "Food": [
-                    { name: "Pupen Seafood Jomtien", start: "06:30 PM", dur: "1.5 hrs", cost: 450, reach: "06:30 PM", dish: "Poo Pad Pong Karee", see: "Giant crab icon at beach.", do: "Enjoy fresh catch by the water.", map: "Pupen+Seafood+Pattaya", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
+                    { name: "Pupen Seafood Jomtien", start: "06:30 PM", dur: "1.5 hrs", cost: 450, reach: "06:30 PM", dish: "Poo Pad Pong Karee", see: "Giant crab icon at beach.", do: "Enjoy fresh catch by the water.", map: "Pupen+Seafood+Pattaya", img: "https://images.unsplash.com/photo-1559740038-60599fbed99b?q=80&w=800" }
                 ],
                 "Nightlife": [
                     { name: "Walking Street", start: "09:00 PM", dur: "Till 2 AM", cost: 800, reach: "09:00 PM", famous: "Party Center", see: "Neon lights and electric vibe.", do: "Experience the bars and live music.", map: "Pattaya+Walking+Street", img: "https://images.unsplash.com/photo-1629115948551-aa947381d6d3?q=80&w=800" }
