@@ -3,55 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thailand Experience 2026</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Thailand 2026 | Tropical Quest</title>
+    <!-- CRITICAL: Using relative paths for GitHub Pages -->
+    <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
     <!-- 1. HERO SECTION -->
     <section id="vibe-section">
-        <div class="hero-content">
+        <div class="hero-box">
             <p>MAY 1 - MAY 6, 2026</p>
             <h1>Thailand Quest</h1>
-            <div id="countdown" style="margin-top: 20px; font-weight: 800; color: var(--accent-magenta);"></div>
-        </div>
-        <div class="scroll-indicator">
-            Scroll to Explore <br> ↓
+            <div id="countdown" style="margin-top: 15px; font-weight: 800; color: var(--accent-emerald);"></div>
         </div>
     </section>
 
     <!-- 2. RULES SECTION -->
     <section id="rules-section">
         <div class="container">
-            <div class="section-header">
-                <h2>THE RULES</h2>
-                <p style="color: var(--text-dim);">Essential Dos & Don'ts for your safety</p>
-            </div>
-            
+            <h2 class="section-title">THE RULES</h2>
             <div class="rules-grid">
                 <div class="rule-card legal">
-                    <h3><i data-lucide="shield-alert"></i> 2026 Legal</h3>
+                    <h3><i data-lucide="shield-alert"></i> Legal 2026</h3>
                     <ul>
                         <li>🚫 <strong>Vaping:</strong> 100% Illegal. Possession = Arrest.</li>
-                        <li>🌿 <strong>Cannabis:</strong> Medical only. In-house prescriptions needed.</li>
-                        <li>👑 <strong>Monarchy:</strong> Zero tolerance for jokes/insults.</li>
+                        <li>🌿 <strong>Cannabis:</strong> Medical only. Prescriptions needed.</li>
+                        <li>👑 <strong>Monarchy:</strong> No jokes or insults. Strictly enforced.</li>
                     </ul>
                 </div>
                 <div class="rule-card culture">
                     <h3><i data-lucide="landmark"></i> Culture</h3>
                     <ul>
-                        <li>👗 <strong>Temples:</strong> Cover shoulders and knees. No exceptions.</li>
-                        <li>👟 <strong>Shoes:</strong> Off at the door for temples/homes.</li>
-                        <li>🧘 <strong>Buddha:</strong> Never point feet at statues.</li>
+                        <li>👗 <strong>Temples:</strong> Cover shoulders and knees.</li>
+                        <li>👟 <strong>Shoes:</strong> Off before entering temples/homes.</li>
+                        <li>🦶 <strong>Buddha:</strong> Never point feet at statues.</li>
                     </ul>
                 </div>
-                <div class="rule-card warning">
-                    <h3><i data-lucide="alert-triangle"></i> Pro Tips</h3>
+                <div class="rule-card pro">
+                    <h3><i data-lucide="sun"></i> Safety</h3>
                     <ul>
-                        <li>🛵 <strong>Traffic:</strong> Avoid scooters without Inter-license.</li>
-                        <li>🇹🇭 <strong>Hymn:</strong> Stop moving if National Anthem plays.</li>
-                        <li>💧 <strong>Water:</strong> Bottled water ONLY. No tap water.</li>
+                        <li>🛵 <strong>Driving:</strong> No scooters without Inter-license.</li>
+                        <li>💧 <strong>Water:</strong> Drink bottled only. No tap water.</li>
+                        <li>🇹🇭 <strong>Hymn:</strong> Stop moving if anthem plays.</li>
                     </ul>
                 </div>
             </div>
@@ -61,32 +55,29 @@
     <!-- 3. PLAN SECTION -->
     <section id="plan-section">
         <div class="container">
-            <div class="section-header">
-                <h2>THE PLAN</h2>
-                <p style="color: var(--text-dim);">Your Daily High-Density Adventure</p>
+            <h2 class="section-title">THE PLAN</h2>
+            
+            <div class="day-nav">
+                <button class="day-btn active" onclick="showDay(1)">DAY 1</button>
+                <button class="day-btn" onclick="showDay(2)">DAY 2</button>
+                <button class="day-btn" onclick="showDay(3)">DAY 3</button>
+                <button class="day-btn" onclick="showDay(4)">DAY 4</button>
+                <button class="day-btn" onclick="showDay(5)">DAY 5</button>
             </div>
 
-            <!-- Sticky Navigation -->
-            <div class="day-sticky-nav">
-                <button class="day-nav-btn active" onclick="showDay(1)">DAY 1: LANDING</button>
-                <button class="day-nav-btn" onclick="showDay(2)">DAY 2: PATTAYA</button>
-                <button class="day-nav-btn" onclick="showDay(3)">DAY 3: TO BANGKOK</button>
-                <button class="day-nav-btn" onclick="showDay(4)">DAY 4: ICONS</button>
-                <button class="day-nav-btn" onclick="showDay(5)">DAY 5: DEPARTURE</button>
-            </div>
-
-            <div id="itinerary-list" class="event-list">
+            <div id="itinerary-list" class="itinerary-container">
                 <!-- Events injected by JS -->
             </div>
         </div>
     </section>
 
-    <!-- Float Budget Sticky -->
-    <div class="budget-sticky">
+    <!-- Budget Float -->
+    <div class="budget-bar">
         TODAY'S BUDGET: <span id="day-total">0 THB</span>
     </div>
 
-    <script src="app.js"></script>
+    <!-- CRITICAL: Using relative paths for GitHub Pages -->
+    <script src="./app.js"></script>
     <script>lucide.createIcons();</script>
 </body>
 </html>
