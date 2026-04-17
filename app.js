@@ -76,10 +76,10 @@ const data = {
                     { name: "Wat Arun (Sunset)", start: "06:00 PM", end: "07:30 PM", hours: "08:00 AM - 06:00 PM", dur: "1.5 hrs", cost: 200, famous: "Dawn Spires", see: "Golden spires of the temple against the setting sun.", do: "Take a cross-river ferry to the temple for photos.", map: "Wat+Arun+Bangkok", transport: "MRT Sanam Chai", img: "./wat arunn.webp" }
                 ],
                 "Food": [
-                    { name: "Chinatown Street Food", start: "08:30 PM", end: "10:30 PM", hours: "06:00 PM - 12:00 AM (Peak)", dur: "2 hrs", cost: 500, dish: "Oyster Omelette", see: "Neon-soaked Yaowarat Road bustle.", do: "Join the street food crawl in the world's best Chinatown.", map: "Yaowarat+Road+Bangkok", img: "https://images.unsplash.com/photo-1555529323-288219463b2f?q=80&w=800" }
+                    { name: "Chinatown Street Food", start: "08:30 PM", end: "10:30 PM", hours: "06:00 PM - 12:00 AM (Peak)", dur: "2 hrs", cost: 500, dish: "Oyster Omelette", see: "Neon-soaked Yaowarat Road bustle.", do: "Join the street food crawl in the world's best Chinatown.", map: "Yaowarat+Road+Bangkok", img: "./china town street fodd.jpeg" }
                 ],
                 "Nightlife": [
-                    { name: "Sky Bar Tichuca", start: "11:00 PM", end: "02:00 AM", hours: "05:00 PM - 02:00 AM", dur: "Till 2 AM", cost: 1000, famous: "Sky Jungle", see: "The iconic LED Tree over the Bangkok skyline.", do: "Party at the world's most Instagrammable rooftop bar.", map: "Tichuca+Rooftop", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800" }
+                    { name: "Sky Bar Tichuca", start: "11:00 PM", end: "02:00 AM", hours: "05:00 PM - 02:00 AM", dur: "Till 2 AM", cost: 1000, famous: "Sky Jungle", see: "The iconic LED Tree over the Bangkok skyline.", do: "Party at the world's most Instagrammable rooftop bar.", map: "Tichuca+Rooftop", img: "./Tichuca-Rooftop-Bar-in-Bangkok-21.jpg" }
                 ]
             }
         },
