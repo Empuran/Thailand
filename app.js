@@ -21,20 +21,20 @@ const data = {
             total: 0,
             sections: {
                 "Travel & Morning": [
-                    { name: "DMK Arrival & Transfer", start: "08:30 AM", dur: "3 hrs", cost: 150, reach: "11:30 AM", famous: "Arrival Leg", see: "Don Mueang Airport to Pattaya.", do: "Take official Bus A1 to PTY.", transport: "Bus (150 THB) / Taxi (1500 THB)", img: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=800" },
-                    { name: "Tiger Park Pattaya", start: "12:00 PM", dur: "1.5 hrs", cost: 600, reach: "12:00 PM", famous: "Tiger Interaction", see: "Majestic tigers in a park setting.", do: "Photo op with medium tigers.", book: "Klook", map: "Tiger+Park+Pattaya", transport: "Bolt (80 THB)", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" }
+                    { name: "DMK Arrival & Transfer", start: "08:30 AM", end: "11:30 AM", dur: "3 hrs", cost: 150, famous: "Arrival Leg", see: "Don Mueang Airport to Pattaya.", do: "Take official Bus A1 to PTY.", transport: "Bus (150 THB) / Taxi (1500 THB)", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800" },
+                    { name: "Tiger Park Pattaya", start: "12:00 PM", end: "01:30 PM", dur: "1.5 hrs", cost: 600, famous: "Tiger Interaction", see: "Majestic tigers in a park setting.", do: "Photo op with medium tigers.", book: "Klook", map: "Tiger+Park+Pattaya", transport: "Bolt (80 THB)", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" }
                 ],
                 "Activities": [
-                    { name: "Sanctuary of Truth", start: "02:30 PM", dur: "2.5 hrs", cost: 500, reach: "02:30 PM", famous: "Wooden Architecture", see: "Entirely hand-carved wooden museum.", do: "Join the mandatory guided tour.", book: "Tripadvisor", map: "Sanctuary+of+Truth+Pattaya", transport: "Bolt (120 THB)", img: "https://images.unsplash.com/photo-1610410058814-1f558a2d1847?q=80&w=800" }
+                    { name: "Sanctuary of Truth", start: "02:30 PM", end: "05:00 PM", dur: "2.5 hrs", cost: 500, famous: "Wooden Architecture", see: "Entirely hand-carved wooden museum.", do: "Join the mandatory guided tour.", book: "Tripadvisor", map: "Sanctuary+of+Truth+Pattaya", transport: "Bolt (120 THB)", img: "./sanctuary.jpg" }
                 ],
                 "Food": [
-                    { name: "Pupen Seafood Jomtien", start: "06:30 PM", dur: "1.5 hrs", cost: 450, reach: "06:30 PM", dish: "Poo Pad Pong Karee", see: "Giant crab icon at beach.", do: "Enjoy fresh catch by the water.", map: "Pupen+Seafood+Pattaya", img: "https://images.unsplash.com/photo-1559740038-60599fbed99b?q=80&w=800" }
+                    { name: "Pupen Seafood Jomtien", start: "06:30 PM", end: "08:00 PM", dur: "1.5 hrs", cost: 450, dish: "Poo Pad Pong Karee", see: "Giant crab icon at beach.", do: "Enjoy fresh catch by the water.", map: "Pupen+Seafood+Pattaya", img: "./pupen-seafood.jpg" }
                 ],
                 "Nightlife": [
-                    { name: "Walking Street", start: "09:00 PM", dur: "Till 2 AM", cost: 800, reach: "09:00 PM", famous: "Party Center", see: "Neon lights and electric vibe.", do: "Experience the bars and live music.", map: "Pattaya+Walking+Street", img: "https://images.unsplash.com/photo-1590732152668-f9bcf040375a?q=80&w=800" }
+                    { name: "Walking Street", start: "09:00 PM", end: "02:00 AM", dur: "Till 2 AM", cost: 800, famous: "Party Center", see: "Neon lights and electric vibe.", do: "Experience the bars and live music.", map: "Pattaya+Walking+Street", img: "https://images.unsplash.com/photo-1590732152668-f9bcf040375a?q=80&w=800" }
                 ],
                 "Weed": [
-                    { name: "Cloud Nine", start: "11:30 PM", dur: "1 hr", cost: 400, reach: "11:30 PM", famous: "Cloud Theme", desc: "Top shelf flower in a surreal setting.", map: "Cloud+Nine+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1628191010210-a597bd1a548c?q=80&w=800" }
+                    { name: "Cloud Nine", start: "11:30 PM", end: "12:30 AM", dur: "1 hr", cost: 400, famous: "Cloud Theme", desc: "Top shelf flower in a surreal setting.", map: "Cloud+Nine+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1628191010210-a597bd1a548c?q=80&w=800" }
                 ]
             }
         },
@@ -43,22 +43,22 @@ const data = {
             total: 0,
             sections: {
                 "Morning": [
-                    { name: "7:30 AM Breakfast", start: "07:30 AM", dur: "30 min", cost: 150, reach: "07:30 AM", famous: "Morning Start", see: "Local Pattaya café vibe.", do: "Fuel up for the island day.", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
-                    { name: "Koh Larn (Coral Island)", start: "08:30 AM", dur: "5 hrs", cost: 400, reach: "08:30 AM", famous: "Snorkeling Spot", see: "Samae Beach crystal waters.", do: "Rent a sea scooter or snorkel.", book: "Klook", map: "Bali+Hai+Pier", transport: "Speedboat (300 THB)", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800" }
+                    { name: "7:30 AM Breakfast", start: "07:30 AM", end: "08:00 AM", dur: "30 min", cost: 150, famous: "Morning Start", see: "Local Pattaya café vibe.", do: "Fuel up for the island day.", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
+                    { name: "Koh Larn (Coral Island)", start: "08:30 AM", end: "01:30 PM", dur: "5 hrs", cost: 400, famous: "Snorkeling Spot", see: "Samae Beach crystal waters.", do: "Rent a sea scooter or snorkel.", book: "Klook", map: "Bali+Hai+Pier", transport: "Speedboat (300 THB)", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800" }
                 ],
                 "Activities": [
-                    { name: "Art in Paradise", start: "02:00 PM", dur: "1.5 hrs", cost: 500, reach: "02:00 PM", famous: "3D Trick Art", see: "Massive wall-to-floor illusions.", do: "Take creative 3D photos.", book: "Klook", map: "Art+in+Paradise+Pattaya", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" },
-                    { name: "Big Buddha + Wang Sam Sien", start: "04:30 PM", dur: "2 hrs", cost: 0, reach: "04:30 PM", famous: "Heritage Hill", see: "Golden Buddha & Chinese Temple.", do: "Watch sunset from the hill.", map: "Wat+Phra+Yai+Pattaya", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" },
-                    { name: "Buddha Mountain (Khao Chi Chan)", start: "07:00 PM", dur: "1 hr", cost: 0, reach: "07:00 PM", famous: "Laser-Engraved Cliff", see: "130m tall golden Buddha on a cliff.", do: "Photography and peaceful walk.", set: "Na Jomtien", map: "Khao+Chi+Chan+Pattaya", img: "https://images.unsplash.com/photo-1629814421447-353d7195484a?q=80&w=800" }
+                    { name: "Art in Paradise", start: "02:00 PM", end: "03:30 PM", dur: "1.5 hrs", cost: 500, famous: "3D Trick Art", see: "Massive wall-to-floor illusions.", do: "Take creative 3D photos.", book: "Klook", map: "Art+in+Paradise+Pattaya", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" },
+                    { name: "Big Buddha + Wang Sam Sien", start: "04:30 PM", end: "06:30 PM", dur: "2 hrs", cost: 0, famous: "Heritage Hill", see: "Golden Buddha & Chinese Temple.", do: "Watch sunset from the hill.", map: "Wat+Phra+Yai+Pattaya", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800" },
+                    { name: "Buddha Mountain (Khao Chi Chan)", start: "07:00 PM", end: "08:00 PM", dur: "1 hr", cost: 0, famous: "Laser-Engraved Cliff", see: "130m tall golden Buddha on a cliff.", do: "Photography and peaceful walk.", transport: "Taxi Stand (300 THB)", map: "Khao+Chi+Chan+Pattaya", img: "https://images.unsplash.com/photo-1629814421447-353d7195484a?q=80&w=800" }
                 ],
                 "Food": [
-                    { name: "The Sky Gallery", start: "09:00 PM", dur: "1.5 hrs", cost: 600, reach: "09:00 PM", dish: "Phad Thai Lobster", see: "Cliffs overlooking the ocean.", do: "Late dinner with seaside breeze.", map: "Sky+Gallery+Pattaya", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800" }
+                    { name: "The Sky Gallery", start: "09:00 PM", end: "10:30 PM", dur: "1.5 hrs", cost: 600, dish: "Phad Thai Lobster", see: "Cliffs overlooking the ocean.", do: "Late dinner with seaside breeze.", map: "Sky+Gallery+Pattaya", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800" }
                 ],
                 "Nightlife": [
-                    { name: "Alcazar Cabaret Show", start: "11:00 PM", dur: "1.5 hrs", cost: 600, reach: "11:00 PM", famous: "World Class Show", see: "Spectacular costumes and dance.", book: "Official", map: "Alcazar+Cabaret+Show+Pattaya", img: "https://images.unsplash.com/photo-1514525253361-b8748b43a59a?q=80&w=800" }
+                    { name: "Alcazar Cabaret Show", start: "11:00 PM", end: "12:30 AM", dur: "1.5 hrs", cost: 600, famous: "World Class Show", see: "Spectacular costumes and dance.", book: "Official", map: "Alcazar+Cabaret+Show+Pattaya", img: "https://images.unsplash.com/photo-1514525253361-b8748b43a59a?q=80&w=800" }
                 ],
                 "Weed": [
-                    { name: "Siam Green Pattaya", start: "01:00 AM", dur: "1 hr", cost: 300, reach: "01:00 AM", famous: "Premium Shop", desc: "Best curated flower for the night.", map: "Siam+Green+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1589139044941-84196d07d6d5?q=80&w=800" }
+                    { name: "Siam Green Pattaya", start: "01:00 AM", end: "02:00 AM", dur: "1 hr", cost: 300, famous: "Premium Shop", desc: "Best curated flower for the night.", map: "Siam+Green+Cannabis+Pattaya", img: "https://images.unsplash.com/photo-1589139044941-84196d07d6d5?q=80&w=800" }
                 ]
             }
         },
@@ -67,19 +67,19 @@ const data = {
             total: 0,
             sections: {
                 "Morning": [
-                    { name: "7:30 AM BKK Transfer", start: "07:30 AM", dur: "2.5 hrs", cost: 150, reach: "10:00 AM", famous: "City Transfer", see: "Intercity Highway Views.", do: "Catch the direct Bus/Private Car.", transport: "Bus (150 THB) / Taxi (1200 THB)", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800" },
-                    { name: "Chatuchak Market (Sunday)", start: "10:30 AM", dur: "3 hrs", cost: 400, reach: "10:30 AM", famous: "Shopper Paradise", see: "15,000 stalls of everything.", do: "Bargain for souvenirs/clothing.", map: "Chatuchak+Weekend+Market", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
+                    { name: "7:30 AM BKK Transfer", start: "07:30 AM", end: "10:00 AM", dur: "2.5 hrs", cost: 150, famous: "City Transfer", see: "Intercity Highway Views.", do: "Catch the direct Bus/Private Car.", transport: "Bus (150 THB) / Taxi (1200 THB)", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800" },
+                    { name: "Chatuchak Market (Sunday)", start: "10:30 AM", end: "01:30 PM", dur: "3 hrs", cost: 400, famous: "Shopper Paradise", see: "15,000 stalls of everything.", do: "Bargain for souvenirs/clothing.", map: "Chatuchak+Weekend+Market", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
                 ],
                 "Activities": [
-                    { name: "The Grand Palace", start: "02:00 PM", dur: "2 hrs", cost: 500, reach: "02:00 PM", famous: "Temple of Emerald Buddha", see: "Architecture of the Kings.", do: "Mandatory dress code applied.", book: "Official", map: "Grand+Palace+Bangkok", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" },
-                    { name: "Wat Pho", start: "04:30 PM", dur: "1 hr", cost: 300, reach: "04:30 PM", famous: "Reclining Buddha", see: "Gold-plated 46m long Buddha.", map: "Wat+Pho+Bangkok", img: "https://images.unsplash.com/photo-1528642168434-c483a652a8a1?q=80&w=800" },
-                    { name: "Wat Arun (Sunset)", start: "06:00 PM", dur: "1.5 hrs", cost: 200, reach: "06:00 PM", famous: "Porcelain Spire", see: "Sunset behind the temple.", map: "Wat+Arun+Bangkok", transport: "Ferry (5 THB)", img: "https://images.unsplash.com/photo-1582298538104-fe2e04f63873?q=80&w=800" }
+                    { name: "The Grand Palace", start: "02:00 PM", end: "04:00 PM", dur: "2 hrs", cost: 500, famous: "Temple of Emerald Buddha", see: "Architecture of the Kings.", do: "Mandatory dress code applied.", book: "Official", map: "Grand+Palace+Bangkok", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" },
+                    { name: "Wat Pho", start: "04:30 PM", end: "05:30 PM", dur: "1 hr", cost: 300, famous: "Reclining Buddha", see: "Gold-plated 46m long Buddha.", map: "Wat+Pho+Bangkok", img: "https://images.unsplash.com/photo-1528642168434-c483a652a8a1?q=80&w=800" },
+                    { name: "Wat Arun (Sunset)", start: "06:00 PM", end: "07:30 PM", dur: "1.5 hrs", cost: 200, famous: "Porcelain Spire", see: "Sunset behind the temple.", map: "Wat+Arun+Bangkok", transport: "Ferry (5 THB)", img: "https://images.unsplash.com/photo-1582298538104-fe2e04f63873?q=80&w=800" }
                 ],
                 "Food": [
-                    { name: "Yaowarat Street Food", start: "08:30 PM", dur: "2 hrs", cost: 500, reach: "08:30 PM", dish: "Rolled Noodles / Seafood", see: "Neon Chinatown crowds.", do: "Join the long queue for Jay Fai.", map: "Yaowarat+Road+Bangkok", img: "https://images.unsplash.com/photo-1555529323-288219463b2f?q=80&w=800" }
+                    { name: "Yaowarat Street Food", start: "08:30 PM", end: "10:30 PM", dur: "2 hrs", cost: 500, dish: "Rolled Noodles / Seafood", see: "Neon Chinatown crowds.", do: "Join the long queue for Jay Fai.", map: "Yaowarat+Road+Bangkok", img: "https://images.unsplash.com/photo-1555529323-288219463b2f?q=80&w=800" }
                 ],
                 "Nightlife": [
-                    { name: "Tichuca Rooftop", start: "11:00 PM", dur: "Till 2 AM", cost: 1000, reach: "11:00 PM", famous: "Jungle Bar", see: "Led tree and skyline views.", map: "Tichuca+Rooftop+Bar", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800" }
+                    { name: "Tichuca Rooftop", start: "11:00 PM", end: "02:00 AM", dur: "Till 2 AM", cost: 1000, famous: "Jungle Bar", see: "Led tree and skyline views.", map: "Tichuca+Rooftop+Bar", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800" }
                 ]
             }
         },
@@ -88,24 +88,24 @@ const data = {
             total: 0,
             sections: {
                 "Morning": [
-                    { name: "7:30 AM Breakfast", start: "07:30 AM", dur: "30 min", cost: 150, reach: "07:30 AM", famous: "Fuel Up", see: "Bangkok street life waking up.", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
-                    { name: "Golden Mount (Wat Saket)", start: "09:00 AM", dur: "1.5 hrs", cost: 100, reach: "09:00 AM", famous: "Panorama View", see: "Golden stupa visible from afar.", map: "Wat+Saket+Bangkok", img: "https://images.unsplash.com/photo-1528642168434-c483a652a8a1?q=80&w=800" }
+                    { name: "7:30 AM Breakfast", start: "07:30 AM", end: "08:00 AM", dur: "30 min", cost: 150, famous: "Fuel Up", see: "Bangkok street life waking up.", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
+                    { name: "Golden Mount (Wat Saket)", start: "09:00 AM", end: "10:30 AM", dur: "1.5 hrs", cost: 100, famous: "Panorama View", see: "Golden stupa visible from afar.", map: "Wat+Saket+Bangkok", img: "https://images.unsplash.com/photo-1528642168434-c483a652a8a1?q=80&w=800" }
                 ],
                 "Activities": [
-                    { name: "Lumpini Park", start: "11:00 AM", dur: "1.5 hrs", cost: 0, reach: "11:00 AM", famous: "BKK Central Park", see: "Monitor lizards in the lake.", map: "Lumpini+Park+Bangkok", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800" },
-                    { name: "Jim Thompson House", start: "01:30 PM", dur: "2 hrs", cost: 200, reach: "01:30 PM", famous: "Thai Silk Home", see: "Traditional teak wood architecture.", map: "Jim+Thompson+House+Bangkok", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" }
+                    { name: "Lumpini Park", start: "11:00 AM", end: "12:30 PM", dur: "1.5 hrs", cost: 0, famous: "BKK Central Park", see: "Monitor lizards in the lake.", map: "Lumpini+Park+Bangkok", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800" },
+                    { name: "Jim Thompson House", start: "01:30 PM", end: "03:30 PM", dur: "2 hrs", cost: 200, famous: "Thai Silk Home", see: "Traditional teak wood architecture.", map: "Jim+Thompson+House+Bangkok", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" }
                 ],
                 "Massage": [
-                    { name: "Health Land Asoke", start: "04:30 PM", dur: "2 hrs", cost: 650, reach: "04:30 PM", famous: "Authentic Massage", see: "Grand traditional center.", do: "2-hr Traditional Thai Massage.", book: "Klook", map: "Health+Land+Asoke", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" }
+                    { name: "Health Land Asoke", start: "04:30 PM", end: "06:30 PM", dur: "2 hrs", cost: 650, famous: "Authentic Massage", see: "Grand traditional center.", do: "2-hr Traditional Thai Massage.", book: "Klook", map: "Health+Land+Asoke", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" }
                 ],
                 "Food": [
-                    { name: "Khao San Street Eats", start: "07:30 PM", dur: "2 hrs", cost: 400, reach: "07:30 PM", dish: "Crispy Pork / Pad Thai", see: "Backpacker buzz and energy.", map: "Khao+San+Road+Bangkok", img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800" }
+                    { name: "Khao San Street Eats", start: "07:30 PM", end: "09:30 PM", dur: "2 hrs", cost: 400, dish: "Crispy Pork / Pad Thai", see: "Backpacker buzz and energy.", map: "Khao+San+Road+Bangkok", img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800" }
                 ],
                 "Nightlife": [
-                    { name: "Asiatique Riverfront", start: "10:30 PM", dur: "Till 2 AM", cost: 800, reach: "10:30 PM", famous: "Ferris Wheel", see: "Open air riverside shopping.", map: "Asiatique+Riverfront+Bangkok", img: "https://images.unsplash.com/photo-1618335829737-2228915674e0?q=80&w=800" }
+                    { name: "Asiatique Riverfront", start: "10:30 PM", end: "02:00 AM", dur: "Till 2 AM", cost: 800, famous: "Ferris Wheel", see: "Open air riverside shopping.", map: "Asiatique+Riverfront+Bangkok", img: "https://images.unsplash.com/photo-1618335829737-2228915674e0?q=80&w=800" }
                 ],
                 "Weed": [
-                    { name: "Cloud Nine Bangkok", start: "01:00 AM", dur: "1 hr", cost: 400, reach: "01:00 AM", famous: "Modern Dispensary", desc: "Best white-box experience in BKK.", map: "Cloud+Nine+Cannabis+Asoke", img: "https://images.unsplash.com/photo-1589139044941-84196d07d6d5?q=80&w=800" }
+                    { name: "Cloud Nine Bangkok", start: "01:00 AM", end: "02:00 AM", dur: "1 hr", cost: 400, famous: "Modern Dispensary", desc: "Best white-box experience in BKK.", map: "Cloud+Nine+Cannabis+Asoke", img: "https://images.unsplash.com/photo-1628191010210-a597bd1a548c?q=80&w=800" }
                 ]
             }
         },
@@ -114,18 +114,18 @@ const data = {
             total: 0,
             sections: {
                 "Morning": [
-                    { name: "7:30 AM Breakfast", start: "07:30 AM", dur: "30 min", cost: 150, reach: "07:30 AM", famous: "Final Start", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
-                    { name: "Ancient City (Muang Boran)", start: "09:00 AM", dur: "4 hrs", cost: 700, reach: "09:00 AM", famous: "Museum in the Open", see: "Replicas of all Thai landmarks.", do: "Rent a golf cart (300 THB).", book: "Klook", map: "Muang+Boran+Ancient+City", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
+                    { name: "7:30 AM Breakfast", start: "07:30 AM", end: "08:00 AM", dur: "30 min", cost: 150, famous: "Final Start", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800" },
+                    { name: "Ancient City (Muang Boran)", start: "09:00 AM", end: "01:00 PM", dur: "4 hrs", cost: 700, famous: "Museum in the Open", see: "Replicas of all Thai landmarks.", do: "Rent a golf cart (300 THB).", book: "Klook", map: "Muang+Boran+Ancient+City", img: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" }
                 ],
                 "Activities": [
-                    { name: "Erawan Museum", start: "02:00 PM", dur: "2 hrs", cost: 400, reach: "02:00 PM", famous: "Three-Headed Elephant", see: "Massive bronze elephant sculpture.", map: "Erawan+Museum+Bangkok", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" },
-                    { name: "MOCA Bangkok", start: "04:30 PM", dur: "2 hrs", cost: 250, reach: "04:30 PM", famous: "Modern Art", see: "Premium contemporary collection.", map: "MOCA+Bangkok", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" }
+                    { name: "Erawan Museum", start: "02:00 PM", end: "04:00 PM", dur: "2 hrs", cost: 400, famous: "Three-Headed Elephant", see: "Massive bronze elephant sculpture.", map: "Erawan+Museum+Bangkok", img: "https://images.unsplash.com/photo-1563492065561-36d319a8fc11?q=80&w=800" },
+                    { name: "MOCA Bangkok", start: "04:30 PM", end: "06:30 PM", dur: "2 hrs", cost: 250, famous: "Modern Art", see: "Premium contemporary collection.", map: "MOCA+Bangkok", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" }
                 ],
                 "Food": [
-                    { name: "Final Sunset Drink", start: "07:30 PM", dur: "1.5 hrs", cost: 800, reach: "07:30 PM", dish: "Signature Cocktail", see: "Last city view from rooftop.", map: "Lebua+State+Tower", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800" }
+                    { name: "Final Sunset Drink", start: "07:30 PM", end: "09:00 PM", dur: "1.5 hrs", cost: 800, dish: "Signature Cocktail", see: "Last city view from rooftop.", map: "Lebua+State+Tower", img: "https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?q=80&w=800" }
                 ],
                 "Travel": [
-                    { name: "DMK Exit Bound", start: "10:00 PM", dur: "1 hr", cost: 50, reach: "11:00 PM", famous: "End Quest", see: "Final trip to Don Mueang.", do: "Catch the A1 bus or Grab.", img: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=800" }
+                    { name: "DMK Exit Bound", start: "10:00 PM", end: "11:00 PM", dur: "1 hr", cost: 50, famous: "End Quest", see: "Final trip to Don Mueang.", do: "Catch the A1 bus or Grab.", img: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=800" }
                 ]
             }
         }
@@ -215,7 +215,7 @@ function renderCategory(dIdx, cat) {
                 <div class="card">
                     <div class="card-img" style="background-image:url('${it.image || it.img}')">
                         <div style="position:absolute; bottom:15px; left:15px; background:rgba(255,255,255,0.95); padding:6px 15px; border-radius:50px; font-weight:900; font-size:0.7rem; color:var(--primary); box-shadow:0 10px 20px rgba(0,0,0,0.1);">
-                            ARRIVE @ ${it.reach || it.start}
+                            ${it.start} - ${it.end}
                         </div>
                     </div>
                     <div class="card-body">
